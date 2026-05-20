@@ -1,0 +1,3787 @@
+[
+    {
+        "id": "np_patch_tab",
+        "type": "tab",
+        "label": "NexPulse - Telegram Menu + Settings + Reminders",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "np_notify_tab",
+        "type": "tab",
+        "label": "NexPulse - Dashboard Notifications",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "np_audio_tab",
+        "type": "tab",
+        "label": "NexPulse - Telegram Voice (TTS)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "96a563cf75bb0a17",
+        "type": "tab",
+        "label": "NexPulse - Dashboard Extensions",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "42660b80a45709c6",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "efca33b1a5342b19",
+        "type": "group",
+        "z": "np_patch_tab",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "np_profile_display"
+        ],
+        "x": 1054,
+        "y": 959,
+        "w": 212,
+        "h": 82
+    },
+    {
+        "id": "ffc0d813297a0f48",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "COM4",
+        "serialbaud": "115200",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "7cd755bd23eb6770",
+        "type": "ui_group",
+        "name": "Health",
+        "tab": "",
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a7686fba9d4f0b5c",
+        "type": "ui_tab",
+        "name": "Health",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9c54e6b9a118886e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dbfa4aa129fe4adb",
+        "type": "ui_group",
+        "name": "Vitals",
+        "tab": "a7686fba9d4f0b5c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24a93c81fcde5d93",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a0d0efe8d93d8d09",
+        "type": "ui_group",
+        "name": "hidden",
+        "tab": "24a93c81fcde5d93",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fe88ac11ca3e65b5",
+        "type": "telegram bot",
+        "botname": "NexPulseBot",
+        "usernames": "",
+        "chatids": "7990324298",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "np_audio_group",
+        "type": "ui_group",
+        "name": "Audio - Configuration vocale",
+        "tab": "24a93c81fcde5d93",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "np_group_profile",
+        "type": "ui_group",
+        "name": "Profil utilisateur",
+        "tab": "a7686fba9d4f0b5c",
+        "order": 0,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "np_cfg",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "INIT defaults (once)",
+        "func": "// defaults\nflow.set('reminder_mode', flow.get('reminder_mode') || 'SILENCE_NORMAL');\n// audio_mode: ALWAYS | URGENT_ONLY | NEVER\nflow.set('audio_mode', flow.get('audio_mode') || 'URGENT_ONLY');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "np_cfg_debug"
+            ]
+        ]
+    },
+    {
+        "id": "np_cfg_inject",
+        "type": "inject",
+        "z": "np_patch_tab",
+        "name": "INIT settings",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.5,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "np_cfg"
+            ]
+        ]
+    },
+    {
+        "id": "np_cfg_debug",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "settings debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 640,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "np_tg_receiver",
+        "type": "telegram receiver",
+        "z": "np_patch_tab",
+        "name": "NexPulse receiver (menu+settings)",
+        "bot": "fe88ac11ca3e65b5",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "hasinput": false,
+        "inputs": 0,
+        "handleallupdates": true,
+        "handleprocessupdates": true,
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "np_tg_debug_in",
+                "np_tg_router",
+                "np_onboarding_manager"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "np_tg_debug_in",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "telegram IN (full)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 520,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "np_tg_router",
+        "type": "switch",
+        "z": "np_patch_tab",
+        "name": "route by payload.content",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Menu",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Mes mesures",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Dernière prédiction",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Aide",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "⚙️ Paramètres",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "🔔 Rappels: Toujours",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "🔕 Rappels: Silence si NORMAL",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "🚫 Rappels: Silence total",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "⬅️ Retour menu",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "🔊 Audio: Toujours",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "🚨 Audio: URGENT seulement",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "🔇 Audio: Jamais",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Start",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ℹ️ Explication",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 14,
+        "x": 370,
+        "y": 340,
+        "wires": [
+            [
+                "np_build_menu"
+            ],
+            [
+                "np_keep_chatid_measures"
+            ],
+            [
+                "np_keep_chatid_pred"
+            ],
+            [
+                "np_help"
+            ],
+            [
+                "np_audio_settings_show"
+            ],
+            [
+                "np_settings_set_always"
+            ],
+            [
+                "np_settings_set_silence_normal"
+            ],
+            [
+                "np_settings_set_silent"
+            ],
+            [
+                "np_build_menu"
+            ],
+            [
+                "np_audio_set_always"
+            ],
+            [
+                "np_audio_set_urgent"
+            ],
+            [
+                "np_audio_set_never"
+            ],
+            [
+                "np_build_menu"
+            ],
+            [
+                "np_explain_build"
+            ]
+        ]
+    },
+    {
+        "id": "np_build_menu",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "build menu (keyboard)",
+        "func": "const chatId = msg.payload.chatId;\n\nmsg.payload = {\n  chatId,\n  type: \"message\",\n  content: \"Menu NexPulse : choisis une option 👇\",\n  options: {\n    reply_markup: {\n      keyboard: [\n        [{ text: \"Mes mesures\" }],\n        [{ text: \"Dernière prédiction\" }],\n        [{ text: \"⚙️ Paramètres\" }],\n        [{ text: \"Aide\" }]\n      ],\n      resize_keyboard: true,\n      one_time_keyboard: false\n    }\n  }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 160,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_keep_chatid_measures",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "keep chatId (measures)",
+        "func": "msg.chatId = msg.payload.chatId;\nreturn msg;",
+        "outputs": 1,
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "np_file_last_vitals"
+            ]
+        ]
+    },
+    {
+        "id": "np_file_last_vitals",
+        "type": "file in",
+        "z": "np_patch_tab",
+        "name": "read last_vitals.json",
+        "filename": "C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\last_vitals.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1020,
+        "y": 240,
+        "wires": [
+            [
+                "np_json_last_vitals"
+            ]
+        ]
+    },
+    {
+        "id": "np_json_last_vitals",
+        "type": "json",
+        "z": "np_patch_tab",
+        "name": "parse vitals json",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1240,
+        "y": 240,
+        "wires": [
+            [
+                "np_format_measures"
+            ]
+        ]
+    },
+    {
+        "id": "np_format_measures",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "format measures reply",
+        "func": "const v = msg.payload || {};\nconst ts = v.ts || \"(inconnu)\";\nconst bpm = (v.bpm ?? \"--\");\nconst spo2 = (v.spo2 ?? \"--\");\nconst temp = (v.temp === null || v.temp === undefined) ? \"--\" : Number(v.temp).toFixed(1);\n\nconst text =\n  \"Dernières mesures NexPulse:\\n\" +\n  `• Date: ${ts}\\n` +\n  `• BPM: ${bpm}\\n` +\n  `• SpO2: ${spo2}%\\n` +\n  `• Temp: ${temp}°C`;\n\nmsg.payload = {\n  chatId: msg.chatId,\n  type: \"message\",\n  content: text\n};\nreturn msg;",
+        "outputs": 1,
+        "x": 1460,
+        "y": 240,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_keep_chatid_pred",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "keep chatId (predict)",
+        "func": "msg.chatId = msg.payload.chatId;\nreturn msg;",
+        "outputs": 1,
+        "x": 760,
+        "y": 320,
+        "wires": [
+            [
+                "np_file_last_pred"
+            ]
+        ]
+    },
+    {
+        "id": "np_file_last_pred",
+        "type": "file in",
+        "z": "np_patch_tab",
+        "name": "read last_predict.json",
+        "filename": "C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\last_predict.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1020,
+        "y": 320,
+        "wires": [
+            [
+                "np_json_last_pred"
+            ]
+        ]
+    },
+    {
+        "id": "np_json_last_pred",
+        "type": "json",
+        "z": "np_patch_tab",
+        "name": "parse pred json",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1230,
+        "y": 320,
+        "wires": [
+            [
+                "np_store_pred"
+            ]
+        ]
+    },
+    {
+        "id": "np_store_pred",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "store pred -> msg.pred",
+        "func": "msg.pred = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "x": 1440,
+        "y": 320,
+        "wires": [
+            [
+                "np_file_last_vitals2",
+                "febac9ccf135b73d"
+            ]
+        ]
+    },
+    {
+        "id": "np_file_last_vitals2",
+        "type": "file in",
+        "z": "np_patch_tab",
+        "name": "read last_vitals.json (for pred)",
+        "filename": "C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\last_vitals.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1690,
+        "y": 280,
+        "wires": [
+            [
+                "np_json_last_vitals2"
+            ]
+        ]
+    },
+    {
+        "id": "np_json_last_vitals2",
+        "type": "json",
+        "z": "np_patch_tab",
+        "name": "parse vitals json (for pred)",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1870,
+        "y": 240,
+        "wires": [
+            [
+                "np_format_pred"
+            ]
+        ]
+    },
+    {
+        "id": "np_format_pred",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "format prediction reply (human + vitals)",
+        "func": "const pred = msg.pred || {};\nconst v = msg.payload || {};\n\nfunction minsToHuman(mins) {\n  const m = Number(mins);\n  if (!Number.isFinite(m)) return \"--\";\n  if (m < 60) return `${m} min`;\n  const h = Math.round((m / 60) * 10) / 10;\n  return `${h} h`;\n}\n\nfunction labelToText(label) {\n  if (label === \"URGENT\") return \"Urgence\";\n  if (label === \"WARNING\") return \"À surveiller\";\n  if (label === \"NORMAL\") return \"Normal\";\n  return label || \"--\";\n}\n\nfunction adviceToText(code) {\n  switch (code) {\n    case \"ADVICE_MONITOR\":\n      return \"Rien d’inquiétant. Continue à surveiller et refais une mesure plus tard.\";\n    case \"ADVICE_REMEASURE\":\n      return \"Refais une mesure au repos (doigt bien placé) dans quelques minutes.\";\n    case \"ADVICE_URGENT\":\n      return \"Valeurs préoccupantes. Si tu as des symptômes (douleur, essoufflement, malaise), demande de l’aide rapidement.\";\n    default:\n      return \"Conseil: garde-toi au calme et refais une mesure si tu te sens mal.\";\n  }\n}\n\nconst tsVitals = v.ts || \"(inconnu)\";\nconst bpm = (v.bpm ?? \"--\");\nconst spo2 = (v.spo2 ?? \"--\");\nconst temp = (v.temp === null || v.temp === undefined) ? \"--\" : Number(v.temp).toFixed(1);\n\nconst need = Number(pred.need_remeasure) === 1;\nconst next = minsToHuman(pred.remeasure_in_min);\nconst followUp = need\n  ? `Refaire une mesure: OUI (dans ${next})`\n  : `Prochaine mesure conseillée: dans ${next}`;\n\nconst text =\n  `Dernière analyse NexPulse\\n` +\n  `• Mesure: ${tsVitals}\\n` +\n  `• BPM: ${bpm} | SpO2: ${spo2}% | Temp: ${temp}°C\\n` +\n  `• État: ${labelToText(pred.label)}\\n` +\n  `• ${adviceToText(pred.advice_code)}\\n` +\n  `• ${followUp}`;\n\n// IMPORTANT: Passer les vitals dans une propriété séparée\nmsg.vitals = {\n  ts: v.ts,\n  bpm: v.bpm,\n  spo2: v.spo2,\n  temp: v.temp\n};\nmsg.pred = pred;\nmsg.chatId = msg.chatId;\n\n// Le message à afficher\nmsg.payload = {\n  chatId: msg.chatId,\n  type: \"message\",\n  content: text\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1870,
+        "y": 180,
+        "wires": [
+            [
+                "np_pred_personalize"
+            ]
+        ]
+    },
+    {
+        "id": "np_help",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "help reply",
+        "func": "const chatId = msg.payload.chatId;\nconst mode = flow.get('reminder_mode') || 'SILENCE_NORMAL';\n\nmsg.payload = {\n  chatId,\n  type: \"message\",\n  content:\n    \"Aide NexPulse:\\n\" +\n    \"• menu : affiche les options\\n\" +\n    \"• Mes mesures : dernière mesure enregistrée\\n\" +\n    \"• Dernière prédiction : dernière analyse + conseils\\n\" +\n    \"• Paramètres : choisir mode (notif/audio)\\n\\n\" +\n    `Mode rappels actuel: ${mode}`\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 420,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_settings_show",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "show settings",
+        "func": "const chatId = msg.payload.chatId;\nconst mode = flow.get('reminder_mode') || 'SILENCE_NORMAL';\n\nlet modeTxt = mode;\nif (mode === \"ALWAYS\") modeTxt = \"Toujours\";\nif (mode === \"SILENCE_NORMAL\") modeTxt = \"Silence si NORMAL\";\nif (mode === \"SILENT\") modeTxt = \"Silence total\";\n\nmsg.payload = {\n  chatId,\n  type: \"message\",\n  content:\n    \"⚙️ Paramètres — Rappels\\n\" +\n    `Mode actuel: ${modeTxt}\\n\\n` +\n    \"Choisis une option :\",\n  options: {\n    reply_markup: {\n      keyboard: [\n        [{ text: \"🔔 Rappels: Toujours\" }],\n        [{ text: \"🔕 Rappels: Silence si NORMAL\" }],\n        [{ text: \"🚫 Rappels: Silence total\" }],\n        [{ text: \"⬅️ Retour menu\" }]\n      ],\n      resize_keyboard: true,\n      one_time_keyboard: false\n    }\n  }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_settings_set_always",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "set reminders ALWAYS",
+        "func": "flow.set('reminder_mode', 'ALWAYS');\nconst chatId = msg.payload.chatId;\nmsg.payload = { chatId, type: 'message', content: '✅ Rappels activés: Toujours' };\nreturn msg;",
+        "outputs": 1,
+        "x": 740,
+        "y": 540,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_settings_set_silence_normal",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "set reminders SILENCE_NORMAL",
+        "func": "flow.set('reminder_mode', 'SILENCE_NORMAL');\nconst chatId = msg.payload.chatId;\nmsg.payload = { chatId, type: 'message', content: '✅ Rappels: Silence si NORMAL (rappels seulement si besoin ou état non normal)' };\nreturn msg;",
+        "outputs": 1,
+        "x": 780,
+        "y": 600,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_settings_set_silent",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "set reminders SILENT",
+        "func": "flow.set('reminder_mode', 'SILENT');\nconst chatId = msg.payload.chatId;\nmsg.payload = { chatId, type: 'message', content: '✅ Rappels désactivés (silence total)' };\nreturn msg;",
+        "outputs": 1,
+        "x": 720,
+        "y": 660,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_tg_sender",
+        "type": "telegram sender",
+        "z": "np_patch_tab",
+        "name": "NexPulse sender (menu/settings)",
+        "bot": "fe88ac11ca3e65b5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1380,
+        "y": 60,
+        "wires": [
+            [
+                "np_tg_debug_out"
+            ]
+        ]
+    },
+    {
+        "id": "np_tg_debug_out",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "telegram OUT (full)",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1710,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "np_pred_link_in",
+        "type": "link in",
+        "z": "np_patch_tab",
+        "name": "IN: /predict response (object)",
+        "links": [
+            "42dd66ff73f6cb4d"
+        ],
+        "x": 960,
+        "y": 680,
+        "wires": [
+            [
+                "np_reminder_scheduler"
+            ]
+        ]
+    },
+    {
+        "id": "np_reminder_scheduler",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "schedule reminders (T-5, T, T+5)",
+        "func": "const p = msg.payload || {};\n\n// --- settings ---\nconst mode = flow.get('reminder_mode') || 'SILENCE_NORMAL';\n\n// label: NORMAL/WARNING/URGENT\nconst label = (p.label || '').toString();\nconst need = Number(p.need_remeasure) === 1;\nconst mins = Number(p.remeasure_in_min);\n\nif (mode === 'SILENT') return null;\nif (!Number.isFinite(mins) || mins <= 0) return null;\n\n// SILENCE_NORMAL: only remind if not NORMAL OR if need_remeasure=1\nif (mode === 'SILENCE_NORMAL') {\n  if (!need && label === 'NORMAL') return null;\n}\n\n// chatId: you used a fixed chat id. If you want per-user later, we can store chatId.\nconst chatId = 7990324298;\n\n// Cancel previous reminders by using a constant topic\nconst baseTopic = 'NEXPULSE_REMEASURE';\n\nfunction buildReminder(delayMs, whenLabel) {\n  return {\n    topic: baseTopic,\n    delay: delayMs,\n    payload: {\n      chatId,\n      type: 'message',\n      content: `⏰ Rappel NexPulse (${whenLabel}) : pense à refaire une mesure.`\n    }\n  };\n}\n\n// target time: mins from now\nconst T = mins * 60 * 1000;\nconst tMinus = Math.max(0, T - 5 * 60 * 1000);\nconst tPlus  = T + 5 * 60 * 1000;\n\n// We send 3 separate messages through delay nodes\nreturn [\n  buildReminder(tMinus, 'dans 5 min'),\n  buildReminder(T, 'maintenant'),\n  buildReminder(tPlus, 'il y a 5 min')\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 680,
+        "wires": [
+            [
+                "np_delay_minus"
+            ],
+            [
+                "np_delay_at"
+            ],
+            [
+                "np_delay_plus"
+            ]
+        ]
+    },
+    {
+        "id": "np_delay_minus",
+        "type": "delay",
+        "z": "np_patch_tab",
+        "name": "delay T-5 (msg.delay)",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "1",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 640,
+        "wires": [
+            [
+                "np_set_delay_minus",
+                "np_debug_rem_minus"
+            ]
+        ]
+    },
+    {
+        "id": "np_set_delay_minus",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "apply msg.delay",
+        "func": "msg.delay = Number(msg.delay);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1740,
+        "y": 600,
+        "wires": [
+            [
+                "np_delay_exec_minus"
+            ]
+        ]
+    },
+    {
+        "id": "np_delay_exec_minus",
+        "type": "delay",
+        "z": "np_patch_tab",
+        "name": "EXEC delay (minus)",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "1",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1950,
+        "y": 640,
+        "wires": [
+            [
+                "np_send_reminder"
+            ]
+        ]
+    },
+    {
+        "id": "np_delay_at",
+        "type": "delay",
+        "z": "np_patch_tab",
+        "name": "delay T (msg.delay)",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "1",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 680,
+        "wires": [
+            [
+                "np_set_delay_at",
+                "np_debug_rem_at"
+            ]
+        ]
+    },
+    {
+        "id": "np_set_delay_at",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "apply msg.delay",
+        "func": "msg.delay = Number(msg.delay);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1740,
+        "y": 700,
+        "wires": [
+            [
+                "np_delay_exec_at"
+            ]
+        ]
+    },
+    {
+        "id": "np_delay_exec_at",
+        "type": "delay",
+        "z": "np_patch_tab",
+        "name": "EXEC delay (at)",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "1",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 700,
+        "wires": [
+            [
+                "np_send_reminder"
+            ]
+        ]
+    },
+    {
+        "id": "np_delay_plus",
+        "type": "delay",
+        "z": "np_patch_tab",
+        "name": "delay T+5 (msg.delay)",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "1",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1540,
+        "y": 720,
+        "wires": [
+            [
+                "np_set_delay_plus",
+                "np_debug_rem_plus"
+            ]
+        ]
+    },
+    {
+        "id": "np_set_delay_plus",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "apply msg.delay",
+        "func": "msg.delay = Number(msg.delay);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1740,
+        "y": 760,
+        "wires": [
+            [
+                "np_delay_exec_plus"
+            ]
+        ]
+    },
+    {
+        "id": "np_delay_exec_plus",
+        "type": "delay",
+        "z": "np_patch_tab",
+        "name": "EXEC delay (plus)",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "1",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1970,
+        "y": 760,
+        "wires": [
+            [
+                "np_send_reminder"
+            ]
+        ]
+    },
+    {
+        "id": "np_send_reminder",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "to telegram message (reminder)",
+        "func": "// msg.payload already is telegram sender payload (object)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2370,
+        "y": 700,
+        "wires": [
+            [
+                "np_tg_sender",
+                "np_debug_rem_out",
+                "9a292f4b49666a55"
+            ]
+        ]
+    },
+    {
+        "id": "np_debug_rem_minus",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "reminder -5 queued",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1730,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "np_debug_rem_at",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "reminder at queued",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1750,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "np_debug_rem_plus",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "reminder +5 queued",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1740,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "np_debug_rem_out",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "reminder OUT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 2360,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "fe624882d5deba45",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "test notif",
+        "func": "// TEMP TEST: force 1 minute\nmsg.payload.remeasure_in_min = 1;\nmsg.payload.need_remeasure = 1;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a292f4b49666a55",
+        "type": "link out",
+        "z": "np_patch_tab",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "np_notify_link_in"
+        ],
+        "x": 2085,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "np_audio_settings_show",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "show settings (rappels + audio)",
+        "func": "const chatId = msg.payload.chatId;\n\n// reminders\nconst mode = flow.get('reminder_mode') || 'SILENCE_NORMAL';\nlet modeTxt = mode;\nif (mode === \"ALWAYS\") modeTxt = \"Toujours\";\nif (mode === \"SILENCE_NORMAL\") modeTxt = \"Silence si NORMAL\";\nif (mode === \"SILENT\") modeTxt = \"Silence total\";\n\n// audio\nconst a = flow.get('audio_mode') || 'URGENT_ONLY';\nlet aTxt = a;\nif (a === 'ALWAYS') aTxt = 'Toujours';\nif (a === 'URGENT_ONLY') aTxt = 'URGENT seulement';\nif (a === 'NEVER') aTxt = 'Jamais';\n\nmsg.payload = {\n  chatId,\n  type: \"message\",\n  content:\n    \"⚙️ Paramètres\\n\" +\n    `• Rappels: ${modeTxt}\\n` +\n    `• Audio auto: ${aTxt}\\n\\n` +\n    \"Choisis une option :\",\n  options: {\n    reply_markup: {\n      keyboard: [\n        [{ text: \"🔔 Rappels: Toujours\" }],\n        [{ text: \"🔕 Rappels: Silence si NORMAL\" }],\n        [{ text: \"🚫 Rappels: Silence total\" }],\n        [{ text: \"🔊 Audio: Toujours\" }],\n        [{ text: \"🚨 Audio: URGENT seulement\" }],\n        [{ text: \"🔇 Audio: Jamais\" }],\n        [{ text: \"⬅️ Retour menu\" }]\n      ],\n      resize_keyboard: true,\n      one_time_keyboard: false\n    }\n  }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_set_always",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "set audio ALWAYS",
+        "func": "flow.set('audio_mode', 'ALWAYS');\nconst chatId = msg.payload.chatId;\nmsg.payload = { chatId, type: 'message', content: '✅ Audio automatique: Toujours' };\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 500,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_set_urgent",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "set audio URGENT_ONLY",
+        "func": "flow.set('audio_mode', 'URGENT_ONLY');\nconst chatId = msg.payload.chatId;\nmsg.payload = { chatId, type: 'message', content: '✅ Audio automatique: seulement si URGENT' };\nreturn msg;",
+        "outputs": 1,
+        "x": 1100,
+        "y": 540,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_set_never",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "set audio NEVER",
+        "func": "flow.set('audio_mode', 'NEVER');\nconst chatId = msg.payload.chatId;\nmsg.payload = { chatId, type: 'message', content: '✅ Audio automatique: Jamais (tu peux toujours utiliser /audio)' };\nreturn msg;",
+        "outputs": 1,
+        "x": 1130,
+        "y": 580,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "febac9ccf135b73d",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "np_auto_audio_gate",
+        "func": "const chatId = msg.chatId || msg.payload?.chatId || 7990324298;\nconst pred = msg.pred || {};\nconst label = (pred.label || \"\").toString();\n\nconst mode = flow.get(\"audio_mode\") || \"URGENT_ONLY\";\n\nlet should = false;\nif (mode === \"ALWAYS\") should = true;\nif (mode === \"NEVER\") should = false;\nif (mode === \"URGENT_ONLY\") should = (label === \"URGENT\");\n\nif (!should) return null;\n\n// message \"factice\" qui déclenche le flow audio\nreturn {\n  payload: {\n    chatId,\n    content: \"/audio\"\n  }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1700,
+        "y": 380,
+        "wires": [
+            [
+                "161c9d2f7aac3572"
+            ]
+        ]
+    },
+    {
+        "id": "161c9d2f7aac3572",
+        "type": "link out",
+        "z": "np_patch_tab",
+        "name": "OUT: trigger audio",
+        "mode": "link",
+        "links": [
+            "987b9f9d4e012b30"
+        ],
+        "x": 1935,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "np_pred_personalize",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "personalize prediction + add explanation button",
+        "func": "// Récupérer les données depuis msg.vitals (pas depuis msg.payload)\nconst pred = msg.pred || {};\nconst v = msg.vitals || {};  // ← Changement important ici\n\nconst name = flow.get('user_name') || '';\nconst age = Number(flow.get('user_age'));\nconst sporty = flow.get('user_sporty');\n\nconst label = (pred.label || '').toString();\nconst extra = [];\nconst isElder = Number.isFinite(age) && age >= 65;\nconst isSporty = sporty === true;\n\nif (label === 'URGENT') {\n  if (isElder) extra.push('Vu ton âge, évite tout effort et reste au calme.');\n  if (isSporty) extra.push('Même si tu es sportif, évite l\\'activité physique et reste au repos pour vérifier.');\n}\n\n// Extraction des valeurs - maintenant depuis v\nlet bpm = null;\nlet spo2 = null;\nlet temp = null;\n\nif (v.bpm !== undefined && v.bpm !== null) bpm = Number(v.bpm);\nif (v.spo2 !== undefined && v.spo2 !== null) spo2 = Number(v.spo2);\nif (v.temp !== undefined && v.temp !== null) temp = Number(v.temp);\n\n// Conseils personnalisés basés sur les valeurs\nif (label !== 'NORMAL' && Number.isFinite(bpm) && bpm > 120) {\n  extra.push('Rythme cardiaque élevé: assieds-toi et respire lentement.');\n}\nif (Number.isFinite(spo2) && spo2 > 0 && spo2 < 92) {\n  extra.push('Saturation basse: évite l\\'effort et demande de l\\'aide si symptômes.');\n}\nif (Number.isFinite(temp) && temp >= 38.5) {\n  extra.push('Température élevée: hydrate-toi et surveille l\\'évolution.');\n}\n\n// Récupérer le message de base\nlet base = (msg.payload && msg.payload.content) ? msg.payload.content : '';\n\n// Ajouter le nom de l'utilisateur si disponible\nif (name) {\n  base = 'Bonjour ' + name + '.\\n\\n' + base;\n}\n\n// Ajouter les conseils personnalisés\nif (extra.length) {\n  base += '\\n\\n💡 Conseils personnalisés:\\n' + extra.map(s => '• ' + s).join('\\n');\n}\n\n// Stocker les données pour l'explication\nconst vitalsToStore = {\n  ts: v.ts || new Date().toISOString(),\n  bpm: bpm,\n  spo2: spo2,\n  temp: temp\n};\n\n// Stocker dans le flow\nflow.set('last_pred', pred);\nflow.set('last_vitals', vitalsToStore);\n\n// DEBUG\nnode.warn(\"=== STORED IN FLOW ===\");\nnode.warn(\"last_pred: \" + JSON.stringify(pred));\nnode.warn(\"last_vitals: \" + JSON.stringify(vitalsToStore));\n\n// Construire le message avec le bouton Explication\nmsg.payload = {\n  chatId: msg.chatId,\n  type: 'message',\n  content: base,\n  options: {\n    reply_markup: {\n      keyboard: [\n        [{ text: 'ℹ️ Explication' }],\n        [{ text: '⬅️ Retour menu' }]\n      ],\n      resize_keyboard: true,\n      one_time_keyboard: false\n    }\n  }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 820,
+        "wires": [
+            [
+                "np_tg_sender",
+                "9be6190222388c55"
+            ]
+        ]
+    },
+    {
+        "id": "np_explain_build",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "build explanation (why state)",
+        "func": "const chatId = msg.payload.chatId;\nconst pred = flow.get('last_pred') || {};\nlet v = flow.get('last_vitals') || {};\n\n// DEBUG - Affiche ce qui est stocké\nnode.warn(\"=== DEBUG explain ===\");\nnode.warn(\"pred: \" + JSON.stringify(pred));\nnode.warn(\"v BEFORE fix: \" + JSON.stringify(v));\n\n// Si v est vide ou mal structuré, essaie de lire depuis le fichier\nif (!v.bpm && !v.spo2 && !v.temp) {\n    // Essayer de lire depuis le flow context ou récupérer depuis le dernier message\n    node.warn(\"Vitals manquants, tentative de récupération...\");\n    \n    // Option: lire depuis le fichier last_vitals.json directement\n    const fs = require('fs');\n    const path = 'C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\last_vitals.json';\n    try {\n        const fileContent = fs.readFileSync(path, 'utf8');\n        const fileVitals = JSON.parse(fileContent);\n        if (fileVitals && (fileVitals.bpm !== undefined || fileVitals.spo2 !== undefined)) {\n            v = fileVitals;\n            node.warn(\"Récupéré depuis fichier: \" + JSON.stringify(v));\n        }\n    } catch(e) {\n        node.warn(\"Erreur lecture fichier vitals: \" + e.message);\n    }\n}\n\n// Extraction des valeurs avec fallbacks\nlet bpm = null;\nlet spo2 = null;\nlet temp = null;\n\n// Essayer différents chemins\nif (v.bpm !== undefined && v.bpm !== null) bpm = Number(v.bpm);\nelse if (v.payload && v.payload.bpm !== undefined) bpm = Number(v.payload.bpm);\n\nif (v.spo2 !== undefined && v.spo2 !== null) spo2 = Number(v.spo2);\nelse if (v.payload && v.payload.spo2 !== undefined) spo2 = Number(v.payload.spo2);\n\nif (v.temp !== undefined && v.temp !== null) temp = Number(v.temp);\nelse if (v.payload && v.payload.temp !== undefined) temp = Number(v.payload.temp);\n\nnode.warn(\"Valeurs extraites - bpm:\" + bpm + \" spo2:\" + spo2 + \" temp:\" + temp);\n\nconst label = (pred.label || '').toString();\n\nconst reasons = [];\nconst normalSignals = [];\n\n// Analyse SpO2\nif (Number.isFinite(spo2) && spo2 > 0) {\n    if (spo2 < 92) reasons.push('SpO2 basse (' + spo2 + '%)');\n    else if (spo2 < 95) reasons.push('SpO2 un peu basse (' + spo2 + '%)');\n    else normalSignals.push('SpO2 normale (' + spo2 + '%)');\n} else if (spo2 === 0) {\n    normalSignals.push('SpO2: ' + spo2 + '% (vérifie le capteur)');\n} else {\n    normalSignals.push('SpO2: donnée non disponible');\n}\n\n// Analyse BPM\nif (Number.isFinite(bpm) && bpm > 0) {\n    if (bpm > 130) reasons.push('BPM très élevé (' + bpm + ')');\n    else if (bpm > 100) reasons.push('BPM élevé (' + bpm + ')');\n    else if (bpm < 60) reasons.push('BPM bas (' + bpm + ')');\n    else normalSignals.push('BPM normal (' + bpm + ')');\n} else if (bpm === 0) {\n    normalSignals.push('BPM: ' + bpm + ' (capteur non détecté)');\n} else {\n    normalSignals.push('BPM: donnée non disponible');\n}\n\n// Analyse Température\nif (Number.isFinite(temp) && temp > 0) {\n    if (temp >= 39) reasons.push('Température très élevée (' + temp.toFixed(1) + '°C)');\n    else if (temp >= 38.5) reasons.push('Température élevée (' + temp.toFixed(1) + '°C)');\n    else if (temp <= 35.5) reasons.push('Température basse (' + temp.toFixed(1) + '°C)');\n    else normalSignals.push('Température normale (' + temp.toFixed(1) + '°C)');\n} else if (temp === 0) {\n    normalSignals.push('Température: 0°C (vérifie le capteur)');\n} else {\n    normalSignals.push('Température: donnée non disponible');\n}\n\nlet headline = label || '--';\nif (label === 'WARNING') headline = 'À surveiller';\nif (label === 'URGENT') headline = 'URGENCE';\nif (label === 'NORMAL') headline = 'Normale';\n\nlet text = '📊 Explication: pourquoi l\\'état est \"' + headline + '\"\\n\\n';\n\nif (reasons.length > 0) {\n    text += '⚠️ Signaux détectés:\\n' + reasons.map(r => '• ' + r).join('\\n');\n} else if (label === 'NORMAL') {\n    text += '✅ Signes vitaux mesurés:\\n' + normalSignals.map(s => '• ' + s).join('\\n');\n} else {\n    text += '📈 Valeurs mesurées:\\n' + normalSignals.map(s => '• ' + s).join('\\n');\n}\n\n// Ajouter les valeurs brutes pour transparence\ntext += '\\n\\n📊 Valeurs brutes: BPM=' + (Number.isFinite(bpm) ? bpm : '?') + \n        ' | SpO2=' + (Number.isFinite(spo2) ? spo2 : '?') + '%' +\n        ' | T=' + (Number.isFinite(temp) ? temp.toFixed(1) : '?') + '°C';\n\ntext += '\\n\\n⚠️ Rappel: ce bot ne remplace pas un avis médical.';\n\nmsg.payload = {\n    chatId,\n    type: 'message',\n    content: text,\n    options: {\n        reply_markup: {\n            keyboard: [\n                [{ text: 'Dernière prédiction' }],\n                [{ text: '⬅️ Retour menu' }]\n            ],\n            resize_keyboard: true,\n            one_time_keyboard: false\n        }\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 980,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "9be6190222388c55",
+        "type": "debug",
+        "z": "np_patch_tab",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1600,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "np_onboard_route",
+        "type": "switch",
+        "z": "np_patch_tab",
+        "name": "onboarding: route state",
+        "property": "payload.content",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "/start",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "✅ Oui, sportif",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "❌ Non, pas sportif",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 110,
+        "y": 1140,
+        "wires": [
+            [
+                "np_onboard_start"
+            ],
+            [
+                "np_onboard_set_sporty_yes"
+            ],
+            [
+                "np_onboard_set_sporty_no"
+            ],
+            [
+                "np_onboard_free_text"
+            ]
+        ]
+    },
+    {
+        "id": "np_onboard_set_sporty_no",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "onboarding: set sporty NO -> done",
+        "func": "const chatId = msg.payload.chatId;\nconst currentState = flow.get('onboard_state') || '';\n\nif (currentState !== 'ASK_SPORTY') return null;\n\nflow.set('user_sporty', false);\nflow.set('onboard_state', 'COMPLETED');  // ← Important: marquer comme complété\n\nconst name = flow.get('user_name') || '';\n\nmsg.payload = { \n    chatId, \n    type: 'message', \n    content: '✅ Profil enregistré. Bonjour ' + name + ' !\\n\\nTape \"Menu\" pour commencer à utiliser NexPulse.',\n    options: {\n        reply_markup: {\n            keyboard: [\n                [{ text: \"Menu\" }]\n            ],\n            resize_keyboard: true\n        }\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_onboard_set_sporty_yes",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "onboarding: set sporty YES -> done",
+        "func": "const chatId = msg.payload.chatId;\nconst currentState = flow.get('onboard_state') || '';\n\nif (currentState !== 'ASK_SPORTY') return null;\n\nflow.set('user_sporty', true);\nflow.set('onboard_state', 'COMPLETED');  // ← Important: marquer comme complété\n\nconst name = flow.get('user_name') || '';\n\nmsg.payload = { \n    chatId, \n    type: 'message', \n    content: '✅ Profil enregistré. Bonjour ' + name + ' !\\n\\nTape \"Menu\" pour commencer à utiliser NexPulse.',\n    options: {\n        reply_markup: {\n            keyboard: [\n                [{ text: \"Menu\" }]\n            ],\n            resize_keyboard: true\n        }\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_onboard_free_text",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "onboarding: handle free text (name/age)",
+        "func": "const chatId =\n  msg.payload?.chatId ||\n  msg.payload?.message?.chat?.id ||\n  msg.chatId ||\n  7990324298;\n\n// Extraction robuste du texte\nconst p = msg.payload || {};\nconst text =\n  (typeof p.content === \"string\" && p.content) ||\n  (typeof p.text === \"string\" && p.text) ||\n  (typeof p.message?.text === \"string\" && p.message.text) ||\n  (typeof p.message?.caption === \"string\" && p.message.caption) ||\n  \"\";\n\nconst clean = text.trim();\n\n// =====================================================\n// IMPORTANT : ignorer les boutons \"sportif\"\n// Ils sont déjà traités par :\n// - np_onboard_set_sporty_yes\n// - np_onboard_set_sporty_no\n// =====================================================\nif (\n  clean === \"✅ Oui, sportif\" ||\n  clean === \"❌ Non, pas sportif\"\n) {\n  return null;\n}\n\nconst state = flow.get(\"onboard_state\") || \"\";\n\n// Si onboarding terminé, ignorer tout\nif (state === \"COMPLETED\") {\n  return null;\n}\n\n// Si aucun état actif, ignorer\nif (!state) {\n  return null;\n}\n\n// =====================================================\n// ASK_SPORTY : forcer l'utilisation des boutons\n// =====================================================\nif (state === \"ASK_SPORTY\") {\n  msg.payload = {\n    chatId,\n    type: \"message\",\n    content: \"Veuillez utiliser les boutons pour répondre :\",\n    options: {\n      reply_markup: {\n        keyboard: [\n          [{ text: \"✅ Oui, sportif\" }],\n          [{ text: \"❌ Non, pas sportif\" }]\n        ],\n        resize_keyboard: true,\n        one_time_keyboard: true\n      }\n    }\n  };\n  return msg;\n}\n\n// =====================================================\n// ASK_NAME\n// =====================================================\nif (state === \"ASK_NAME\") {\n  if (!clean) {\n    msg.payload = {\n      chatId,\n      type: \"message\",\n      content: \"Donne juste ton prénom.\"\n    };\n    return msg;\n  }\n\n  const name = clean.substring(0, 30);\n\n  flow.set(\"user_name\", name);\n  flow.set(\"onboard_state\", \"ASK_AGE\");\n\n  msg.payload = {\n    chatId,\n    type: \"message\",\n    content: `Enchanté ${name}. Quel âge as-tu ? (ex: 28)`\n  };\n  return msg;\n}\n\n// =====================================================\n// ASK_AGE\n// =====================================================\nif (state === \"ASK_AGE\") {\n  if (!clean || clean.length === 0) {\n    msg.payload = {\n      chatId,\n      type: \"message\",\n      content: \"Quel âge as-tu ? (ex: 28)\"\n    };\n    return msg;\n  }\n\n  const age = Number(clean.replace(\",\", \".\"));\n\n  if (!Number.isFinite(age) || age <= 0 || age > 120) {\n    msg.payload = {\n      chatId,\n      type: \"message\",\n      content: \"Âge invalide. Exemple: 28\"\n    };\n    return msg;\n  }\n\n  flow.set(\"user_age\", Math.round(age));\n  flow.set(\"onboard_state\", \"ASK_SPORTY\");\n\n  msg.payload = {\n    chatId,\n    type: \"message\",\n    content: \"Es-tu sportif (activité régulière) ? Choisis un bouton.\",\n    options: {\n      reply_markup: {\n        keyboard: [\n          [{ text: \"✅ Oui, sportif\" }],\n          [{ text: \"❌ Non, pas sportif\" }]\n        ],\n        resize_keyboard: true,\n        one_time_keyboard: true\n      }\n    }\n  };\n  return msg;\n}\n\n// =====================================================\n// Aucun état reconnu\n// =====================================================\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_onboard_start",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "onboarding: start -> ask name",
+        "func": "const chatId = msg.payload.chatId;\n\nflow.set('onboard_state', 'ASK_NAME');\nmsg.payload = {\n    chatId,\n    type: 'message',\n    content: 'Bienvenue sur NexPulse. Comment tu t\\'appelles ?'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_profile_update",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "get profile from flow",
+        "func": "const name = flow.get('user_name') || 'Non renseigné';\nconst age = flow.get('user_age');\nconst sporty = flow.get('user_sporty');\n\nlet sportyText = '';\nif (sporty === true) sportyText = '✅ Oui, sportif';\nelse if (sporty === false) sportyText = '❌ Non sportif';\nelse sportyText = 'Non renseigné';\n\nconst ageText = age ? `${age} ans` : 'Non renseigné';\n\nmsg.payload = `Nom : ${name}\\nÂge : ${ageText}\\nSportif : ${sportyText}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "x": 1160,
+        "y": 1050,
+        "wires": [
+            [
+                "np_profile_display"
+            ]
+        ]
+    },
+    {
+        "id": "np_profile_init",
+        "type": "inject",
+        "z": "np_patch_tab",
+        "name": "Init profil",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 740,
+        "y": 1060,
+        "wires": [
+            [
+                "np_profile_update"
+            ]
+        ]
+    },
+    {
+        "id": "np_profile_refresh_btn",
+        "type": "ui_button",
+        "z": "np_patch_tab",
+        "name": "",
+        "group": "np_group_profile",
+        "order": 2,
+        "width": "6",
+        "height": 1,
+        "passthru": false,
+        "label": "🔄 Rafraîchir",
+        "tooltip": "Mettre à jour l'affichage du profil",
+        "color": "#111827",
+        "bgcolor": "#ffffff",
+        "className": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 960,
+        "y": 1050,
+        "wires": [
+            [
+                "np_profile_update"
+            ]
+        ]
+    },
+    {
+        "id": "np_profile_display",
+        "type": "ui_template",
+        "z": "np_patch_tab",
+        "g": "efca33b1a5342b19",
+        "group": "np_group_profile",
+        "name": "Affichage profil",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "format": "<div style=\"padding:12px; background:#f5f5f5; border-radius:12px;\">\n  <div style=\"font-weight:bold; margin-bottom:8px;\">👤 Mes informations</div>\n  <div style=\"white-space:pre-wrap; font-size:14px;\">{{msg.payload}}</div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1160,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_onboarding_manager",
+        "type": "function",
+        "z": "np_patch_tab",
+        "name": "Onboarding Manager (single state machine)",
+        "func": "const chatId =\n  msg.payload?.chatId ||\n  msg.payload?.message?.chat?.id ||\n  msg.chatId ||\n  7990324298;\n\n// Extraction robuste du texte\nconst p = msg.payload || {};\nconst text = (\n  (typeof p.content === 'string' && p.content) ||\n  (typeof p.text === 'string' && p.text) ||\n  (typeof p.message?.text === 'string' && p.message.text) ||\n  (typeof p.message?.caption === 'string' && p.message.caption) ||\n  ''\n).trim();\n\nif (!text) return null;\n\n// État courant\nlet state = flow.get('onboard_state') || '';\n\n// -------------------------------------------------\n// /start : démarrer ou redémarrer l'onboarding\n// -------------------------------------------------\nif (text === '/start') {\n  flow.set('onboard_state', 'ASK_NAME');\n\n  msg.payload = {\n    chatId,\n    type: 'message',\n    content: 'Bienvenue sur NexPulse. Comment tu t\\'appelles ?'\n  };\n  return msg;\n}\n\n// -------------------------------------------------\n// Si l'onboarding est terminé, ne rien faire\n// -------------------------------------------------\nif (state === 'COMPLETED') {\n  return null;\n}\n\n// -------------------------------------------------\n// Si aucun état actif, ignorer\n// -------------------------------------------------\nif (!state) {\n  return null;\n}\n\n// -------------------------------------------------\n// ASK_NAME\n// -------------------------------------------------\nif (state === 'ASK_NAME') {\n  const name = text.substring(0, 30);\n\n  if (!name) {\n    msg.payload = {\n      chatId,\n      type: 'message',\n      content: 'Donne juste ton prénom.' \n    };\n    return msg;\n  }\n\n  flow.set('user_name', name);\n  flow.set('onboard_state', 'ASK_AGE');\n\n  msg.payload = {\n    chatId,\n    type: 'message',\n    content: `Enchanté ${name}. Quel âge as-tu ? (ex: 28)` \n  };\n  return msg;\n}\n\n// -------------------------------------------------\n// ASK_AGE\n// -------------------------------------------------\nif (state === 'ASK_AGE') {\n  const age = Number(text.replace(',', '.'));\n\n  if (!Number.isFinite(age) || age <= 0 || age > 120) {\n    msg.payload = {\n      chatId,\n      type: 'message',\n      content: 'Âge invalide. Exemple: 28'\n    };\n    return msg;\n  }\n\n  flow.set('user_age', Math.round(age));\n  flow.set('onboard_state', 'ASK_SPORTY');\n\n  msg.payload = {\n    chatId,\n    type: 'message',\n    content: 'Es-tu sportif (activité régulière) ? Choisis un bouton.',\n    options: {\n      reply_markup: {\n        keyboard: [\n          [{ text: '✅ Oui, sportif' }],\n          [{ text: '❌ Non, pas sportif' }]\n        ],\n        resize_keyboard: true,\n        one_time_keyboard: true\n      }\n    }\n  };\n  return msg;\n}\n\n// -------------------------------------------------\n// ASK_SPORTY\n// -------------------------------------------------\nif (state === 'ASK_SPORTY') {\n  if (text === '✅ Oui, sportif') {\n    flow.set('user_sporty', true);\n  } else if (text === '❌ Non, pas sportif') {\n    flow.set('user_sporty', false);\n  } else {\n    msg.payload = {\n      chatId,\n      type: 'message',\n      content: 'Veuillez utiliser les boutons pour répondre.',\n      options: {\n        reply_markup: {\n          keyboard: [\n            [{ text: '✅ Oui, sportif' }],\n            [{ text: '❌ Non, pas sportif' }]\n          ],\n          resize_keyboard: true,\n          one_time_keyboard: true\n        }\n      }\n    };\n    return msg;\n  }\n\n  // Fin de l'onboarding\n  flow.set('onboard_state', 'COMPLETED');\n\n  const name = flow.get('user_name') || '';\n\n  msg.payload = {\n    chatId,\n    type: 'message',\n    content: `✅ Profil enregistré. Bonjour ${name} !\\n\\nTape \\\"Menu\\\" pour commencer à utiliser NexPulse.`, \n    options: {\n      reply_markup: {\n        keyboard: [\n          [{ text: 'Menu' }]\n        ],\n        resize_keyboard: true,\n        one_time_keyboard: false\n      }\n    }\n  };\n  return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 40,
+        "wires": [
+            [
+                "np_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_notify_link_in",
+        "type": "link in",
+        "z": "np_notify_tab",
+        "name": "IN: notifications (reminders/urgent/errors)",
+        "links": [
+            "42dd66ff73f6cb4d",
+            "9a292f4b49666a55"
+        ],
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "np_notify_format"
+            ]
+        ]
+    },
+    {
+        "id": "np_notify_format",
+        "type": "function",
+        "z": "np_notify_tab",
+        "name": "format + append to log (max 50)",
+        "func": "const now = new Date();\nconst ts = now.toLocaleString();\n\n// Accept either telegram message payload {content:...} or plain string\nlet text = '';\nif (typeof msg.payload === 'string') {\n  text = msg.payload;\n} else if (msg.payload && typeof msg.payload === 'object') {\n  text = msg.payload.content || msg.payload.text || JSON.stringify(msg.payload);\n} else {\n  text = String(msg.payload);\n}\n\nconst line = `[${ts}] ${text}`;\n\nlet log = flow.get('notifications_log') || [];\nlog.unshift(line);\nlog = log.slice(0, 50);\nflow.set('notifications_log', log);\n\nmsg.payload = log.join('\\n\\n');\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "np_notify_tpl"
+            ]
+        ]
+    },
+    {
+        "id": "np_notify_clear_btn",
+        "type": "ui_button",
+        "z": "np_notify_tab",
+        "name": "Clear notifications",
+        "group": "np_group_profile",
+        "order": 41,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Vider le journal",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#111827",
+        "className": "",
+        "icon": "delete",
+        "payload": "clear",
+        "payloadType": "str",
+        "topic": "notify",
+        "topicType": "str",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            [
+                "np_notify_clear"
+            ]
+        ]
+    },
+    {
+        "id": "np_notify_clear",
+        "type": "function",
+        "z": "np_notify_tab",
+        "name": "clear log",
+        "func": "flow.set('notifications_log', []);\nmsg.payload = '';\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "np_notify_tpl"
+            ]
+        ]
+    },
+    {
+        "id": "np_notify_tpl",
+        "type": "ui_template",
+        "z": "np_notify_tab",
+        "group": "np_group_profile",
+        "name": "Notifications log (template)",
+        "order": 42,
+        "width": 6,
+        "height": 8,
+        "format": "<div style=\"padding:10px; border-radius:16px; background:rgba(255,255,255,.92); border:1px solid rgba(17,24,39,.06);\">\n  <div style=\"font-weight:900; margin-bottom:8px;\">Notifications (journal)</div>\n  <pre style=\"margin:0; white-space:pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size:12px; line-height:1.35; max-height:320px; overflow:auto;\">{{msg.payload || '—'}}\n  </pre>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_audio_receiver",
+        "type": "telegram receiver",
+        "z": "np_audio_tab",
+        "name": "Receiver (audio command)",
+        "bot": "fe88ac11ca3e65b5",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "hasinput": false,
+        "inputs": 0,
+        "handleallupdates": true,
+        "handleprocessupdates": true,
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "f831182f56e23bb1",
+                "44a99352b2852534"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "np_audio_keep_chatid",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "keep chatId",
+        "func": "msg.chatId = msg.payload.chatId;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "np_audio_read_pred",
+        "type": "file in",
+        "z": "np_audio_tab",
+        "name": "read last_predict.json",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\last_predict.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 800,
+        "y": 120,
+        "wires": [
+            [
+                "np_audio_json_pred"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_json_pred",
+        "type": "json",
+        "z": "np_audio_tab",
+        "name": "parse pred",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 970,
+        "y": 60,
+        "wires": [
+            [
+                "np_audio_store_pred"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_store_pred",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "store pred -> msg.pred",
+        "func": "msg.pred = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 120,
+        "wires": [
+            [
+                "np_audio_read_vitals"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_read_vitals",
+        "type": "file in",
+        "z": "np_audio_tab",
+        "name": "read last_vitals.json",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\last_vitals.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 650,
+        "y": 220,
+        "wires": [
+            [
+                "np_audio_json_vitals"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_json_vitals",
+        "type": "json",
+        "z": "np_audio_tab",
+        "name": "parse vitals",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 650,
+        "y": 280,
+        "wires": [
+            [
+                "np_audio_build_text"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_build_text",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "build FR text to speak",
+        "func": "const pred = msg.pred || {};\nconst v = msg.payload || {};\n\nfunction labelFR(label) {\n  if (label === 'URGENT') return 'urgence';\n  if (label === 'WARNING') return 'à surveiller';\n  if (label === 'NORMAL') return 'normal';\n  return '';\n}\n\nfunction adviceFR(code) {\n  switch (code) {\n    case 'ADVICE_MONITOR':\n      return \"Continue à surveiller et refais une mesure plus tard.\";\n    case 'ADVICE_REMEASURE':\n      return \"Refais une mesure au repos dans quelques minutes.\";\n    case 'ADVICE_URGENT':\n      return \"Si tu as des symptômes, demande de l’aide rapidement.\";\n    default:\n      return \"Garde-toi au calme et refais une mesure si tu te sens mal.\";\n  }\n}\n\nconst bpm = (v.bpm ?? null);\nconst spo2 = (v.spo2 ?? null);\nconst temp = (v.temp === null || v.temp === undefined) ? null : Number(v.temp);\n\nconst need = Number(pred.need_remeasure) === 1;\nconst mins = Number(pred.remeasure_in_min);\n\nlet nextTxt = '';\nif (Number.isFinite(mins)) {\n  if (mins < 60) nextTxt = `${mins} minutes`;\n  else nextTxt = `${Math.round((mins/60)*10)/10} heures`;\n}\n\nconst state = labelFR(pred.label);\n\nconst parts = [];\nparts.push('NexPulse.');\nif (bpm !== null && spo2 !== null) {\n  parts.push(`BPM ${bpm}.`);\n  parts.push(`Saturation ${spo2} pour cent.`);\n}\nif (temp !== null && Number.isFinite(temp)) {\n  parts.push(`Température ${temp.toFixed(1)} degrés.`);\n}\nif (state) parts.push(`État ${state}.`);\nparts.push(adviceFR(pred.advice_code));\n\nif (nextTxt) {\n  parts.push(need ? `Refais une mesure dans ${nextTxt}.` : `Prochaine mesure conseillée dans ${nextTxt}.`);\n}\n\nconst text = parts.join(' ');\n\n// store for exec\nmsg.ttsText = text;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "np_audio_prep_exec"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_exec_tts",
+        "type": "exec",
+        "z": "np_audio_tab",
+        "command": "python",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": true,
+        "oldrc": false,
+        "name": "TTS (gTTS) -> mp3",
+        "x": 1050,
+        "y": 320,
+        "wires": [
+            [
+                "np_ffmpeg_paths"
+            ],
+            [
+                "np_audio_exec_err"
+            ],
+            [
+                "np_audio_exec_rc"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_prep_exec",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "prepare exec cmd (python -c)",
+        "func": "\nconst chatId = msg.chatId || 7990324298;\nconst text = (msg.ttsText || '').toString();\n\nif (!text) {\n    msg.payload = {\n        chatId,\n        type: 'message',\n        content: '⚠️ Rien à lire.'\n    };\n    return [msg, null];\n}\n\nconst outPath = `C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\tts\\\\voice_${Date.now()}.mp3`;\n\ncontext.set(\"lastVoicePath\", outPath);\ncontext.set(\"lastChatId\", chatId);\nmsg.voicePath = outPath;\n// arguments envoyés au nœud exec\nmsg.payload = `\"C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\tts_generator.py\" \"${text}\" \"${outPath}\"`;\n\nreturn [\n  { payload: { chatId, type:\"message\", content:\"🔊 Génération du message vocal…\" } },\n  msg\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 420,
+        "wires": [
+            [
+                "np_audio_sender"
+            ],
+            [
+                "np_audio_exec_tts"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_sender",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "send message: generating...",
+        "func": "msg.payload = {\n  chatId: msg.chatId,\n  type: 'message',\n  content: '🔊 Génération du message vocal en cours…'\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 440,
+        "wires": [
+            [
+                "np_audio_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_send_voice",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "send voice file to telegram",
+        "func": "const chatId = context.get(\"lastChatId\") || msg.chatId || 7990324298;\n\n// ici on suppose que lastVoicePath contient déjà le chemin .ogg\nconst path = context.get(\"lastVoicePathOgg\") || msg.filename;\n\nif (!chatId || !path) {\n  msg.payload = { chatId, type: \"message\", content: \"⚠️ Path/chatId manquant.\" };\n  return msg;\n}\n\nmsg.payload = {\n  chatId,\n  type: \"voice\",\n  content: path\n};\nreturn msg;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "17c82f7d7d293a04"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_tg_sender",
+        "type": "telegram sender",
+        "z": "np_audio_tab",
+        "name": "Telegram sender (voice)",
+        "bot": "fe88ac11ca3e65b5",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 1590,
+        "y": 260,
+        "wires": [
+            [
+                "np_audio_debug_out"
+            ],
+            [
+                "np_audio_debug_err"
+            ]
+        ]
+    },
+    {
+        "id": "np_audio_debug_out",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "audio OUT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "np_audio_debug_err",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "audio ERR",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1750,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "np_audio_exec_err",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "exec stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "np_audio_exec_rc",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "exec rc",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1500,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "np_audio_inject_test",
+        "type": "inject",
+        "z": "np_audio_tab",
+        "name": "TEST (simulate click)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"chatId\":7990324298,\"content\":\"🔊 Audio prédiction\"}",
+        "payloadType": "json",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "44a99352b2852534"
+            ]
+        ]
+    },
+    {
+        "id": "546121d1eac81972",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "f831182f56e23bb1",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "44a99352b2852534",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "route audio (robuste)",
+        "func": "const p = msg.payload || {};\n\nconst text =\n  p.content ||\n  p.text ||\n  p.message?.text ||\n  p.message?.caption ||\n  p.caption ||\n  p.callback_query?.data ||\n  \"\";\n\nconst chatId =\n  p.chatId ||\n  p.message?.chat?.id ||\n  p.chat?.id ||\n  7990324298;   // fallback (ton chatId)\n\nmsg.chatId = chatId;\n\nif (text === \"/audio\" || text === \"🔊 Audio prédiction\") return msg;\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "np_audio_read_pred"
+            ]
+        ]
+    },
+    {
+        "id": "17c82f7d7d293a04",
+        "type": "delay",
+        "z": "np_audio_tab",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1480,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8dc826609062ad74",
+        "type": "exec",
+        "z": "np_audio_tab",
+        "command": "ffmpeg",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": true,
+        "oldrc": false,
+        "name": "",
+        "x": 1270,
+        "y": 180,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "np_ffmpeg_paths",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "set paths for ffmpeg (mp3->ogg)",
+        "func": "const chatId = msg.chatId || context.get(\"lastChatId\") || 7990324298;\n\nconst mp3 =\n  msg.voicePath ||\n  context.get(\"lastVoicePath\");\n\nif (!mp3) {\n  msg.payload = { chatId, type:\"message\", content:\"⚠️ MP3 introuvable.\" };\n  return msg;\n}\n\nconst ogg = mp3.replace(/\\.mp3$/i, \".ogg\");\n\n// garder aussi dans msg (IMPORTANT)\nmsg.chatId = chatId;\nmsg.mp3Path = mp3;\nmsg.oggPath = ogg;\n\n// args ffmpeg\nmsg.payload = `-y -i \"${mp3}\" -c:a libopus -b:a 24k -vbr on \"${ogg}\"`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 600,
+        "wires": [
+            [
+                "np_ffmpeg_exec",
+                "4738df2072b858c6"
+            ]
+        ]
+    },
+    {
+        "id": "np_ffmpeg_exec",
+        "type": "exec",
+        "z": "np_audio_tab",
+        "command": "ffmpeg",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": true,
+        "oldrc": false,
+        "name": "ffmpeg convert mp3->ogg(opus)",
+        "x": 1610,
+        "y": 600,
+        "wires": [
+            [
+                "np_send_voice_ogg"
+            ],
+            [
+                "np_ffmpeg_stderr"
+            ],
+            [
+                "np_ffmpeg_rc"
+            ]
+        ]
+    },
+    {
+        "id": "np_send_voice_ogg",
+        "type": "function",
+        "z": "np_audio_tab",
+        "name": "send OGG voice to telegram",
+        "func": "const chatId = msg.chatId || 7990324298;\n\n// on prend le chemin ogg depuis le msg (pas le context)\nconst ogg = msg.oggPath;\n\nif (!ogg) {\n  msg.payload = { chatId, type:\"message\", content:\"⚠️ oggPath manquant dans msg.\" };\n  return msg;\n}\n\nmsg.payload = {\n  chatId,\n  type: \"voice\",\n  content: ogg\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1880,
+        "y": 600,
+        "wires": [
+            [
+                "np_audio_tg_sender"
+            ]
+        ]
+    },
+    {
+        "id": "np_ffmpeg_stderr",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "ffmpeg stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1870,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "np_ffmpeg_rc",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "ffmpeg rc",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1850,
+        "y": 710,
+        "wires": []
+    },
+    {
+        "id": "4738df2072b858c6",
+        "type": "debug",
+        "z": "np_audio_tab",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "987b9f9d4e012b30",
+        "type": "link in",
+        "z": "np_audio_tab",
+        "name": "IN: trigger audio",
+        "links": [
+            "161c9d2f7aac3572"
+        ],
+        "x": 305,
+        "y": 300,
+        "wires": [
+            [
+                "44a99352b2852534"
+            ]
+        ]
+    },
+    {
+        "id": "929d671979cd1aac",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Dernière mesure",
+        "group": "dbfa4aa129fe4adb",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Dernière mesure",
+        "tooltip": "",
+        "color": "#111827",
+        "bgcolor": "#ffffff",
+        "className": "",
+        "icon": "favorite",
+        "payload": "last_vitals",
+        "payloadType": "str",
+        "topic": "dash",
+        "topicType": "str",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "575dac184a0a65f2"
+            ]
+        ]
+    },
+    {
+        "id": "1a0c9e8f18f4f835",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Dernière prédiction",
+        "group": "dbfa4aa129fe4adb",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Dernière prédiction",
+        "tooltip": "",
+        "color": "#111827",
+        "bgcolor": "#ffffff",
+        "className": "",
+        "icon": "insights",
+        "payload": "last_pred",
+        "payloadType": "str",
+        "topic": "dash",
+        "topicType": "str",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "009ee1b3cdda9218"
+            ]
+        ]
+    },
+    {
+        "id": "cd238ec9556769bd",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Paramètres rappels",
+        "group": "dbfa4aa129fe4adb",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Paramètres rappels",
+        "tooltip": "",
+        "color": "#111827",
+        "bgcolor": "#ffffff",
+        "className": "",
+        "icon": "settings",
+        "payload": "show_settings",
+        "payloadType": "str",
+        "topic": "dash",
+        "topicType": "str",
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "f80485e7b207b985"
+            ]
+        ]
+    },
+    {
+        "id": "23649422116ed66d",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Mode: Toujours",
+        "group": "dbfa4aa129fe4adb",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Toujours",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#16a34a",
+        "className": "",
+        "icon": "notifications_active",
+        "payload": "ALWAYS",
+        "payloadType": "str",
+        "topic": "reminder_mode",
+        "topicType": "str",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "cdd3eff0ea4b1c78"
+            ]
+        ]
+    },
+    {
+        "id": "1a744cc89c90cdd7",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Mode: Silence normal",
+        "group": "dbfa4aa129fe4adb",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Silence NORMAL",
+        "tooltip": "",
+        "color": "#111827",
+        "bgcolor": "#fbbf24",
+        "className": "",
+        "icon": "notifications",
+        "payload": "SILENCE_NORMAL",
+        "payloadType": "str",
+        "topic": "reminder_mode",
+        "topicType": "str",
+        "x": 230,
+        "y": 300,
+        "wires": [
+            [
+                "cdd3eff0ea4b1c78"
+            ]
+        ]
+    },
+    {
+        "id": "9c4a5e2b095f9d7b",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Mode: Silence total",
+        "group": "dbfa4aa129fe4adb",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Silence total",
+        "tooltip": "",
+        "color": "#ffffff",
+        "bgcolor": "#ef4444",
+        "className": "",
+        "icon": "notifications_off",
+        "payload": "SILENT",
+        "payloadType": "str",
+        "topic": "reminder_mode",
+        "topicType": "str",
+        "x": 210,
+        "y": 340,
+        "wires": [
+            [
+                "cdd3eff0ea4b1c78"
+            ]
+        ]
+    },
+    {
+        "id": "f80485e7b207b985",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "Dashboard: settings status",
+        "func": "const mode = flow.get('reminder_mode') || 'SILENCE_NORMAL';\nlet txt = mode;\nif (mode === 'ALWAYS') txt = 'Toujours';\nif (mode === 'SILENCE_NORMAL') txt = 'Silence si NORMAL';\nif (mode === 'SILENT') txt = 'Silence total';\nmsg.payload = `Mode rappels actuel: ${txt}`;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "cdd3eff0ea4b1c78",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "Dashboard: set reminder_mode",
+        "func": "const mode = (msg.payload || '').toString();\nif (!['ALWAYS','SILENCE_NORMAL','SILENT'].includes(mode)) return null;\nflow.set('reminder_mode', mode);\nmsg.payload = `✅ Mode rappels: ${mode}`;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "cc094f0933ab224a",
+        "type": "ui_text",
+        "z": "96a563cf75bb0a17",
+        "group": "dbfa4aa129fe4adb",
+        "order": 16,
+        "width": 6,
+        "height": 2,
+        "name": "Model/Status",
+        "label": "NexPulse (status/modèle)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 870,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "575dac184a0a65f2",
+        "type": "file in",
+        "z": "96a563cf75bb0a17",
+        "name": "read last_vitals.json",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\last_vitals.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 490,
+        "y": 120,
+        "wires": [
+            [
+                "d737f18cde5a437b",
+                "494148183e0d3d5e"
+            ]
+        ]
+    },
+    {
+        "id": "009ee1b3cdda9218",
+        "type": "file in",
+        "z": "96a563cf75bb0a17",
+        "name": "read last_predict.json",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\last_predict.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "7dd309bb55c2cddb",
+                "9ddccb8e49f4b6f1"
+            ]
+        ]
+    },
+    {
+        "id": "d737f18cde5a437b",
+        "type": "json",
+        "z": "96a563cf75bb0a17",
+        "name": "parse vitals",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "f3f06f253c13c9ea"
+            ]
+        ]
+    },
+    {
+        "id": "7dd309bb55c2cddb",
+        "type": "json",
+        "z": "96a563cf75bb0a17",
+        "name": "parse pred",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 680,
+        "y": 160,
+        "wires": [
+            [
+                "9ef6a2bda7b8bbba"
+            ]
+        ]
+    },
+    {
+        "id": "f3f06f253c13c9ea",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "format last vitals -> ui_text",
+        "func": "const v = msg.payload || {};\nconst ts = v.ts || '--';\nconst bpm = (v.bpm ?? '--');\nconst spo2 = (v.spo2 ?? '--');\nconst temp = (v.temp === null || v.temp === undefined) ? '--' : Number(v.temp).toFixed(1);\nmsg.payload = `Dernière mesure: ${ts}\\nBPM ${bpm} | SpO2 ${spo2}% | Temp ${temp}°C`;\nreturn msg;",
+        "outputs": 1,
+        "x": 910,
+        "y": 120,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "9ef6a2bda7b8bbba",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "format last pred -> ui_text",
+        "func": "const p = msg.payload || {};\nconst label = p.label || '--';\nconst advice = p.advice_code || '--';\nconst need = (Number(p.need_remeasure) === 1) ? 'OUI' : 'NON';\nconst next = (p.remeasure_in_min === undefined || p.remeasure_in_min === null) ? '--' : p.remeasure_in_min;\nmsg.payload = `Interprétation modèle:\\nÉtat: ${label}\\nAdvice: ${advice}\\nRemesure: ${need}\\nProchaine: ${next} min`;\nreturn msg;",
+        "outputs": 1,
+        "x": 910,
+        "y": 160,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "494148183e0d3d5e",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "vitals read error",
+        "func": "msg.payload = '⚠️ last_vitals.json introuvable ou invalide';\nreturn msg;",
+        "outputs": 1,
+        "x": 700,
+        "y": 80,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "9ddccb8e49f4b6f1",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "pred read error",
+        "func": "msg.payload = '⚠️ last_predict.json introuvable ou invalide';\nreturn msg;",
+        "outputs": 1,
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "be1f29cefce3f8e0",
+        "type": "ui_chart",
+        "z": "96a563cf75bb0a17",
+        "name": "BPM only",
+        "group": "dbfa4aa129fe4adb",
+        "order": 20,
+        "width": 6,
+        "height": 4,
+        "label": "BPM (évolution)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 6,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#ef4444",
+            "#050505",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 880,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5949832be8a7bf92",
+        "type": "link in",
+        "z": "96a563cf75bb0a17",
+        "name": "IN: predict response (from Flux 1)",
+        "links": [
+            "42dd66ff73f6cb4d"
+        ],
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "bd942e7bd7861d86",
+                "aa8b80f120e01b5b"
+            ]
+        ]
+    },
+    {
+        "id": "bd942e7bd7861d86",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "predict -> update UI text",
+        "func": "const p = msg.payload || {};\nconst label = p.label || '--';\nconst advice = p.advice_code || '--';\nconst need = (Number(p.need_remeasure) === 1) ? 'OUI' : 'NON';\nconst next = (p.remeasure_in_min === undefined || p.remeasure_in_min === null) ? '--' : p.remeasure_in_min;\nmsg.payload = `Interprétation modèle (live):\\nÉtat: ${label}\\nAdvice: ${advice}\\nRemesure: ${need}\\nProchaine: ${next} min`;\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 440,
+        "wires": [
+            [
+                "cc094f0933ab224a"
+            ]
+        ]
+    },
+    {
+        "id": "aa8b80f120e01b5b",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "predict -> BPM chart point",
+        "func": "const p = msg.payload || {};\nlet bpm = p?.features_used?.bpm;\nif (!Number.isFinite(Number(bpm))) return null;\nmsg.payload = Number(bpm);\nmsg.topic = 'BPM';\nreturn msg;",
+        "outputs": 1,
+        "x": 520,
+        "y": 480,
+        "wires": [
+            [
+                "be1f29cefce3f8e0"
+            ]
+        ]
+    },
+    {
+        "id": "b824fb63ab44f9b7",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "",
+        "group": "np_group_profile",
+        "order": 17,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "🔊 Toujours",
+        "tooltip": "Annonce vocale pour chaque prédiction",
+        "color": "#ffffff",
+        "bgcolor": "#16a34a",
+        "className": "",
+        "icon": "volume_up",
+        "payload": "ALWAYS",
+        "payloadType": "str",
+        "topic": "audio_mode",
+        "topicType": "str",
+        "x": 240,
+        "y": 680,
+        "wires": [
+            [
+                "4623d3f6cbf0da95"
+            ]
+        ]
+    },
+    {
+        "id": "858ceb20bd457a46",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "",
+        "group": "np_group_profile",
+        "order": 18,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "🚨 URGENT",
+        "tooltip": "Annonce vocale seulement pour les états URGENT",
+        "color": "#111827",
+        "bgcolor": "#fbbf24",
+        "className": "",
+        "icon": "warning",
+        "payload": "URGENT_ONLY",
+        "payloadType": "str",
+        "topic": "audio_mode",
+        "topicType": "str",
+        "x": 270,
+        "y": 720,
+        "wires": [
+            [
+                "4623d3f6cbf0da95"
+            ]
+        ]
+    },
+    {
+        "id": "9bf4f523572ce98b",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "",
+        "group": "np_group_profile",
+        "order": 19,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "🔇 Jamais",
+        "tooltip": "Désactiver les annonces vocales automatiques",
+        "color": "#ffffff",
+        "bgcolor": "#ef4444",
+        "className": "",
+        "icon": "volume_off",
+        "payload": "NEVER",
+        "payloadType": "str",
+        "topic": "audio_mode",
+        "topicType": "str",
+        "x": 250,
+        "y": 760,
+        "wires": [
+            [
+                "4623d3f6cbf0da95"
+            ]
+        ]
+    },
+    {
+        "id": "5aea40b834d0e525",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "",
+        "group": "np_group_profile",
+        "order": 20,
+        "width": "6",
+        "height": 1,
+        "passthru": false,
+        "label": "ℹ️ État",
+        "tooltip": "Afficher la configuration audio actuelle",
+        "color": "#111827",
+        "bgcolor": "#ffffff",
+        "className": "",
+        "icon": "info",
+        "payload": "show",
+        "payloadType": "str",
+        "topic": "audio_status",
+        "topicType": "str",
+        "x": 290,
+        "y": 800,
+        "wires": [
+            [
+                "8e8d158a2c8649b2"
+            ]
+        ]
+    },
+    {
+        "id": "4623d3f6cbf0da95",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "set audio mode",
+        "func": "const mode = (msg.payload || '').toString();\nif (!['ALWAYS','URGENT_ONLY','NEVER'].includes(mode)) return null;\n\nconst oldMode = flow.get('audio_mode') || 'URGENT_ONLY';\nnode.warn(`Audio mode changed: ${oldMode} -> ${mode}`);\nflow.set('audio_mode', mode);\n\nlet modeDisplay = mode;\nif (mode === 'ALWAYS') modeDisplay = 'Toujours';\nif (mode === 'URGENT_ONLY') modeDisplay = 'URGENT seulement';\nif (mode === 'NEVER') modeDisplay = 'Jamais';\n\nmsg.payload = `✅ Audio: ${modeDisplay}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 720,
+        "wires": [
+            [
+                "4d8ca0e39b6583f8",
+                "d72ad155faad57d9"
+            ]
+        ]
+    },
+    {
+        "id": "8e8d158a2c8649b2",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "show audio status",
+        "func": "const mode = flow.get('audio_mode') || 'URGENT_ONLY';\nlet modeDisplay = mode;\nif (mode === 'ALWAYS') modeDisplay = 'Toujours';\nif (mode === 'URGENT_ONLY') modeDisplay = 'URGENT seulement';\nif (mode === 'NEVER') modeDisplay = 'Jamais';\n\nmsg.payload = `🔊 Mode audio actuel: ${modeDisplay}\\n\\n` +\n    `• Toujours: annonce vocale pour TOUTES les prédictions\\n` +\n    `• URGENT seulement: annonce vocale uniquement pour les états URGENT\\n` +\n    `• Jamais: aucune annonce automatique (utilise /audio manuellement)`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 800,
+        "wires": [
+            [
+                "d72ad155faad57d9"
+            ]
+        ]
+    },
+    {
+        "id": "9d0591843df8e9e0",
+        "type": "inject",
+        "z": "96a563cf75bb0a17",
+        "name": "Init audio_mode",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 200,
+        "y": 960,
+        "wires": [
+            [
+                "11ceef039966ba86"
+            ]
+        ]
+    },
+    {
+        "id": "11ceef039966ba86",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "initialiser audio_mode",
+        "func": "if (flow.get('audio_mode') === undefined) {\n    flow.set('audio_mode', 'URGENT_ONLY');\n    node.warn('audio_mode initialisé à URGENT_ONLY');\n}\nconst mode = flow.get('audio_mode');\nlet modeDisplay = mode;\nif (mode === 'ALWAYS') modeDisplay = 'Toujours';\nif (mode === 'URGENT_ONLY') modeDisplay = 'URGENT seulement';\nif (mode === 'NEVER') modeDisplay = 'Jamais';\nmsg.payload = `🔊 Configuration audio actuelle: ${modeDisplay}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 960,
+        "wires": [
+            [
+                "d72ad155faad57d9"
+            ]
+        ]
+    },
+    {
+        "id": "4d8ca0e39b6583f8",
+        "type": "link out",
+        "z": "96a563cf75bb0a17",
+        "name": "sync audio to telegram",
+        "mode": "link",
+        "links": [],
+        "x": 800,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f94082432eef9ce4",
+        "type": "ui_button",
+        "z": "96a563cf75bb0a17",
+        "name": "Moyennes ",
+        "group": "np_group_profile",
+        "order": 23,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "📊 Moyennes du jour",
+        "tooltip": "Affiche des moyennes factices",
+        "color": "#111827",
+        "bgcolor": "#ffffff",
+        "className": "",
+        "icon": "calculate",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 210,
+        "y": 1100,
+        "wires": [
+            [
+                "32d3d64c9c658b18"
+            ]
+        ]
+    },
+    {
+        "id": "32d3d64c9c658b18",
+        "type": "function",
+        "z": "96a563cf75bb0a17",
+        "name": "générer moyennes",
+        "func": "// Valeurs factices pour la démo\nconst Bpm = 76;\nconst Spo2 = 98;\nconst Temp = 36.4;\n\nmsg.payload = `📊 Moyennes  :\\n• BPM  : ${Bpm} bpm\\n• SpO2 : ${Spo2}%\\n• Temp : ${Temp}°C`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1100,
+        "wires": [
+            [
+                "ae52d49d55f4cf59"
+            ]
+        ]
+    },
+    {
+        "id": "ae52d49d55f4cf59",
+        "type": "ui_text",
+        "z": "96a563cf75bb0a17",
+        "group": "np_group_profile",
+        "order": 24,
+        "width": 6,
+        "height": 3,
+        "name": "Moyennes affichées",
+        "label": "Moyennes du jour",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 960,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "d72ad155faad57d9",
+        "type": "ui_template",
+        "z": "96a563cf75bb0a17",
+        "group": "np_group_profile",
+        "name": "Configuration audio (scrollable)",
+        "order": 21,
+        "width": 6,
+        "height": 3,
+        "format": "<div style=\"padding:8px; background:#f9f9f9; border-radius:12px; max-height:100%; overflow-y:auto;\">\n  <div style=\"font-weight:bold; margin-bottom:6px;\">État audio</div>\n  <div style=\"white-space:pre-wrap; font-size:12px; line-height:1.4;\">{{msg.payload}}</div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 930,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "844eede895856d32",
+        "type": "ui_gauge",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "group": "dbfa4aa129fe4adb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "BMP",
+        "label": "bmp",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "aa7101ca8206c154",
+        "type": "ui_gauge",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "group": "dbfa4aa129fe4adb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SpO2",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5cc5aee33665a0bf",
+        "type": "ui_gauge",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "group": "dbfa4aa129fe4adb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "98fbd0f32be15d2c",
+        "type": "ui_chart",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "group": "np_group_profile",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Historique",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 880,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e4e01aaace96d14e",
+        "type": "ui_template",
+        "z": "42660b80a45709c6",
+        "group": "dbfa4aa129fe4adb",
+        "name": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"\n  padding:12px 14px;\n  border-radius:16px;\n  font-weight:900;\n  display:flex;\n  gap:10px;\n  align-items:center;\n  background: {{msg.bg || '#fff'}};\n  color: {{msg.color || '#111827'}};\n  border: 1px solid rgba(17,24,39,0.06);\n\">\n  <div style=\"\n    width:10px;height:10px;border-radius:50%;\n    background: {{msg.dot || '#22c55e'}};\n  \"></div>\n  <div style=\"flex:1\">{{msg.payload}}</div>\n  <div style=\"opacity:.75;font-weight:800\">{{msg.right || ''}}</div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 880,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb5aeefdb55ea523",
+        "type": "ui_template",
+        "z": "42660b80a45709c6",
+        "group": "a0d0efe8d93d8d09",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n  .np-heart{\n  width:42px; height:42px;\n  display:flex; align-items:center; justify-content:center;\n  border-radius:14px;\n  background: #ffe4e6;         /* light red/pink */\n  color: #ff3b30;              /* accent red */\n  font-size:22px;\n  box-shadow: 0 10px 20px rgba(255,59,48,0.18);\n  animation: npBeat 1.2s infinite;\n}\n@keyframes npBeat{\n  0%, 100% { transform: scale(1); }\n  20% { transform: scale(1.08); }\n  40% { transform: scale(1.00); }\n  60% { transform: scale(1.10); }\n}\n  /* ===== Background overall ===== */\n  .nr-dashboard-theme md-content {\n    background: linear-gradient(180deg, #fdecef 0%, #f7f7fb 45%, #ffffff 100%) !important;\n  }\n\n  /* Make dashboard centered like an app (good on PC) */\n  .nr-dashboard-theme ui-view>md-content>div,\n  .nr-dashboard-theme .grid-stack {\n    max-width: 420px;\n    /* mobile-app width */\n    margin: 0 auto;\n  }\n\n  /* ===== Top bar ===== */\n  .nr-dashboard-theme md-toolbar {\n    background: transparent !important;\n    color: #111827 !important;\n    box-shadow: none !important;\n  }\n\n  .nr-dashboard-theme md-toolbar .md-toolbar-tools {\n    font-weight: 800;\n  }\n\n  /* ===== Cards (groups/widgets) ===== */\n  .nr-dashboard-theme md-card,\n  .nr-dashboard-theme .nr-dashboard-cardpanel {\n    border-radius: 22px !important;\n    background: rgba(255, 255, 255, 0.92) !important;\n    border: 1px solid rgba(17, 24, 39, 0.06) !important;\n    box-shadow: 0 10px 25px rgba(17, 24, 39, 0.08) !important;\n  }\n\n  /* Group title */\n  .nr-dashboard-theme .nr-dashboard-cardtitle,\n  .nr-dashboard-theme .md-title {\n    color: #111827 !important;\n    font-weight: 900 !important;\n    letter-spacing: 0.2px;\n  }\n\n  /* ===== Buttons (pill style) ===== */\n  .nr-dashboard-theme .md-button {\n    border-radius: 999px !important;\n    text-transform: none !important;\n    font-weight: 700 !important;\n  }\n\n  /* ===== Inputs ===== */\n  .nr-dashboard-theme input,\n  .nr-dashboard-theme textarea {\n    border-radius: 14px !important;\n  }\n\n  /* ===== Make gauges look cleaner ===== */\n  .nr-dashboard-theme .nr-dashboard-gauge text {\n    font-weight: 800 !important;\n  }\n\n  /* Optional: reduce chart grid harshness */\n  .nr-dashboard-theme canvas {\n    filter: saturate(1.05);\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 1360,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fe53c3e2938a5c3",
+        "type": "ui_template",
+        "z": "42660b80a45709c6",
+        "group": "dbfa4aa129fe4adb",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"display:flex; align-items:center; gap:12px; padding:6px 2px;\">\n    <div class=\"np-heart\">❤</div>\n    <div>\n        <div style=\"font-weight:900; font-size:18px; line-height:1;\">NexPulse</div>\n        <div style=\"opacity:.65; font-weight:700; margin-top:2px;\">Live vitals monitoring</div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 1520,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b427af70e8b4868f",
+        "type": "http in",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "url": "/vitals",
+        "method": "post",
+        "upload": true,
+        "skipBodyParsing": true,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "b10d78c790a003ea"
+            ]
+        ]
+    },
+    {
+        "id": "b10d78c790a003ea",
+        "type": "json",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 360,
+        "wires": [
+            [
+                "a4ecf781ef390cca",
+                "d2902dab186dd82f"
+            ]
+        ]
+    },
+    {
+        "id": "a4ecf781ef390cca",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "parse vitals",
+        "func": "// expecting JSON from ESP:\n// { finger: true/false, bpm: number, spo2: number, temp: number|null }\n\nconst p = msg.payload || {};\nconst finger = !!p.finger;\n\n// ---------- UI helper ----------\nfunction statusMsg(text, bg, color, dot, right = \"\") {\n  return { payload: text, bg, color, dot, right };\n}\n\nfunction levelColor(level) {\n  if (level === \"URGENT\")    return { bg: \"#fff1f2\", color: \"#9f1239\", dot: \"#f43f5e\" };\n  if (level === \"ATTENTION\") return { bg: \"#fffbeb\", color: \"#92400e\", dot: \"#f59e0b\" };\n  return { bg: \"#f0fdf4\", color: \"#166534\", dot: \"#22c55e\" }; // OK\n}\n\nfunction worstLevel(levels) {\n  const rank = { OK: 0, ATTENTION: 1, URGENT: 2 };\n  return levels.reduce((a, b) => (rank[b] > rank[a] ? b : a), \"OK\");\n}\n\n// ---------- level functions (indicatif) ----------\nfunction spo2Level(spo2) {\n  if (!Number.isFinite(spo2)) return \"ATTENTION\";\n  if (spo2 < 90) return \"URGENT\";\n  if (spo2 < 95) return \"ATTENTION\";\n  return \"OK\";\n}\n\nfunction bpmLevel(bpm) {\n  if (!Number.isFinite(bpm)) return \"ATTENTION\";\n  if (bpm < 50 || bpm > 120) return \"URGENT\";\n  if (bpm < 60 || bpm > 100) return \"ATTENTION\";\n  return \"OK\";\n}\n\nfunction tempLevel(temp) {\n  if (!Number.isFinite(temp)) return \"ATTENTION\";\n  if (temp >= 38.5) return \"URGENT\";\n  if (temp >= 37.6) return \"ATTENTION\";\n  if (temp < 35.5) return \"URGENT\";\n  return \"OK\";\n}\n\n// ---------- no finger ----------\nif (!finger) {\n  const c = levelColor(\"ATTENTION\");\n  return [\n    null, null, null, null,\n    statusMsg(\"Place your finger on the sensor\", c.bg, c.color, c.dot, \"Attention\"),\n    { payload: { finger: false, event: \"FINGER_OFF\" } }\n  ];\n}\n\n// ---------- read values ----------\nconst bpm  = Number(p.bpm);\nconst spo2 = Number(p.spo2);\nconst temp = (p.temp === null || p.temp === undefined) ? NaN : Number(p.temp);\n\n// require bpm & spo2\nif (!Number.isFinite(bpm) || !Number.isFinite(spo2)) return null;\n\n// ---------- compute levels ----------\nconst Lspo2 = spo2Level(spo2);\nconst Lbpm  = bpmLevel(bpm);\nconst Ltemp = tempLevel(temp);\n\nconst overallLevel = worstLevel([Lspo2, Lbpm, Ltemp]);               // \"OK\"|\"ATTENTION\"|\"URGENT\"\nconst overallLabel = (overallLevel === \"OK\") ? \"Normal\" : overallLevel; // string\nconst c = levelColor(overallLevel);                                  // {bg,color,dot}\n\n// ---------- score ----------\nlet score = 100;\n\nif (Lspo2 === \"URGENT\") score -= 40;\nelse if (Lspo2 === \"ATTENTION\") score -= 20;\n\nif (Lbpm === \"URGENT\") score -= 40;\nelse if (Lbpm === \"ATTENTION\") score -= 20;\n\nif (Ltemp === \"URGENT\") score -= 30;\nelse if (Ltemp === \"ATTENTION\") score -= 15;\n\nscore = Math.max(0, Math.min(100, score));\n\n// ---------- diagnostic (prudence: indicatif) ----------\nlet diagnostic = \"État physiologique stable\";\n\nif (overallLevel === \"URGENT\") {\n  if (Lspo2 === \"URGENT\") diagnostic = \"SpO2 très basse — vérifie le capteur et demande de l’aide si ça persiste\";\n  else if (Lbpm === \"URGENT\") diagnostic = \"Rythme cardiaque hors zone — repose-toi et refais une mesure\";\n  else if (Ltemp === \"URGENT\") diagnostic = \"Température critique — surveille et consulte si nécessaire\";\n  else diagnostic = \"Valeurs critiques détectées — refais une mesure\";\n} else if (overallLevel === \"ATTENTION\") {\n  if (Lspo2 === \"ATTENTION\") diagnostic = \"SpO2 un peu basse — refais une mesure au calme\";\n  else if (Lbpm === \"ATTENTION\") diagnostic = \"BPM hors zone de repos — respire et refais une mesure\";\n  else if (Ltemp === \"ATTENTION\") diagnostic = \"Température élevée/modifiée — hydrate-toi et surveille\";\n  else diagnostic = \"Valeurs à surveiller — refais une mesure\";\n}\n\n// ---------- display text ----------\nconst tempTxt = Number.isFinite(temp) ? temp.toFixed(1) : \"--.-\";\n\n// 2 lignes (plus lisible sur mobile)\nconst summary =\n  `État: ${overallLabel} — Score ${score}/100\\n` +\n  `${diagnostic}\\n` +\n  `BPM ${bpm} | SpO2 ${spo2}% | T ${tempTxt}°C`;\n\n// ---------- output (6 ports) ----------\nreturn [\n  { payload: bpm },   // 1 BPM gauge\n  { payload: spo2 },  // 2 SpO2 gauge\n  { payload: temp },  // 3 Temp gauge\n\n  [                  // 4 chart\n    { payload: bpm,  topic: \"BPM\"  },\n    { payload: spo2, topic: \"SpO2\" },\n    { payload: temp, topic: \"Temp\" }\n  ],\n\n  statusMsg(summary, c.bg, c.color, c.dot, overallLabel), // 5 ui_template\n\n  { // 6 object (CSV / debug / future AI)\n    payload: {\n  finger: true,\n  bpm, spo2, temp,\n  overallLevel, overallLabel,\n  l_bpm: Lbpm, l_spo2: Lspo2, l_temp: Ltemp,\n  score, diagnostic\n}\n  }\n];",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "844eede895856d32"
+            ],
+            [
+                "aa7101ca8206c154"
+            ],
+            [
+                "5cc5aee33665a0bf"
+            ],
+            [
+                "98fbd0f32be15d2c"
+            ],
+            [
+                "e4e01aaace96d14e"
+            ],
+            [
+                "03d46c398d3b58a1"
+            ]
+        ]
+    },
+    {
+        "id": "3adff7eb45e34031",
+        "type": "http response",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 830,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d2902dab186dd82f",
+        "type": "change",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ok",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 640,
+        "wires": [
+            [
+                "3adff7eb45e34031"
+            ]
+        ]
+    },
+    {
+        "id": "03d46c398d3b58a1",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "buffer_and_commit",
+        "func": "const p = msg.payload || {};\n\n// ------------- Mesure en cours -------------\nif (p.finger === true) {\n  // autoriser un futur commit (évite spam sur finger=false)\n  context.set(\"committed\", false);\n\n  // garder la dernière mesure stable (celle qu'on enverra à l'API)\n  context.set(\"lastStable\", {\n    ts: new Date().toISOString(),\n    bpm: p.bpm,\n    spo2: p.spo2,\n    temp: p.temp\n  });\n\n  return [null, null, null];\n}\n\n// ------------- Fin de mesure (doigt retiré) -------------\nif (p.event === \"FINGER_OFF\" || p.finger === false) {\n  if (context.get(\"committed\") === true) return [null, null, null];\n\n  const last = context.get(\"lastStable\");\n  if (!last) return [null, null, null];\n\n  context.set(\"committed\", true);\n\n  // (1) last_vitals.json -> overwrite\n  const msgLast = {\n    payload: JSON.stringify(last, null, 2),\n    filename: \"C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\last_vitals.json\"\n  };\n\n  // (2) history_vitals.jsonl -> append\n  const msgHist = {\n    payload: JSON.stringify(last) + \"\\n\",\n    filename: \"C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\history_vitals.jsonl\"\n  };\n\n  // (3) message pour l'API ML (objet, pas string)\n  const msgML = {\n    payload: {\n      patient_id: \"P001\",\n      bpm: Number(last.bpm),\n      spo2: Number(last.spo2),\n      temp: (last.temp === undefined || last.temp === null) ? null : Number(last.temp),\n      symptom: \"none\"\n    }\n  };\n\n  return [msgLast, msgHist, msgML];\n}\n\nreturn [null, null, null];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 500,
+        "wires": [
+            [
+                "5b6086d6218caeb3"
+            ],
+            [
+                "32320076c1ddd636"
+            ],
+            [
+                "174fd9a4f5c1f44f"
+            ]
+        ]
+    },
+    {
+        "id": "5b6086d6218caeb3",
+        "type": "file",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\history_vitals.jsonl",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 1290,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32320076c1ddd636",
+        "type": "file",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\last_vitals.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 1280,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "174fd9a4f5c1f44f",
+        "type": "http request",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8000/predict",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            }
+        ],
+        "x": 1010,
+        "y": 600,
+        "wires": [
+            [
+                "613c944af98a2b2f",
+                "24750a76fa22768e",
+                "42dd66ff73f6cb4d"
+            ]
+        ]
+    },
+    {
+        "id": "ee3aae224eb6541a",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "build request",
+        "func": "const p = msg.payload || {};\n\n// Protection: ignorer les messages sans bpm/spo2 (ex: FINGER_OFF)\nif (!Number.isFinite(Number(p.bpm)) || !Number.isFinite(Number(p.spo2))) {\n    return null;\n}\n\nmsg.payload = {\n    patient_id: p.patient_id || \"P001\",\n    bpm: Number(p.bpm),\n    spo2: Number(p.spo2),\n    temp: (p.temp === undefined || p.temp === null) ? null : Number(p.temp),\n    symptom: p.symptom || \"none\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 980,
+        "wires": [
+            [
+                "2e738872fd8bb2e1"
+            ]
+        ]
+    },
+    {
+        "id": "613c944af98a2b2f",
+        "type": "switch",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "property": "payload.need_remeasure",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1180,
+        "y": 600,
+        "wires": [
+            [
+                "efd6423368a006c6"
+            ],
+            [
+                "03d45784912dc895"
+            ]
+        ]
+    },
+    {
+        "id": "efd6423368a006c6",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "set delay",
+        "func": "// convert minutes -> milliseconds\nmsg.delay = Number(msg.payload.remeasure_in_min) * 60 * 1000;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 540,
+        "wires": [
+            [
+                "f914274b008ced1a"
+            ]
+        ]
+    },
+    {
+        "id": "f914274b008ced1a",
+        "type": "delay",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1480,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ae69e1dc2e94e53",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "format telegram",
+        "func": "const p = msg.payload || {};\n\n// Helpers\nfunction minsToHuman(mins) {\n  const m = Number(mins);\n  if (!Number.isFinite(m)) return \"--\";\n  if (m < 60) return `${m} min`;\n  const h = Math.round((m / 60) * 10) / 10; // 1 décimale\n  return `${h} h`;\n}\n\nfunction labelToText(label) {\n  if (label === \"URGENT\") return \"Urgence\";\n  if (label === \"WARNING\") return \"À surveiller\";\n  if (label === \"NORMAL\") return \"Normal\";\n  return label || \"--\";\n}\n\nfunction adviceToText(code) {\n  switch (code) {\n    case \"ADVICE_MONITOR\":\n      return \"Rien d’inquiétant. Continue à surveiller et refais une mesure plus tard.\";\n    case \"ADVICE_REMEASURE\":\n      return \"Refais une mesure au repos (doigt bien placé) dans quelques minutes.\";\n    case \"ADVICE_URGENT\":\n      return \"Valeurs préoccupantes. Si tu as des symptômes (douleur, essoufflement, malaise), demande de l’aide rapidement.\";\n    default:\n      return \"Conseil: garde-toi au calme et refais une mesure si tu te sens mal.\";\n  }\n}\n\n// Lecture des champs\nconst label = p.label;\nconst adviceCode = p.advice_code;\nconst need = Number(p.need_remeasure) === 1; // chez toi c’est 0/1\nconst next = minsToHuman(p.remeasure_in_min);\n\n// Message “humain”\nlet followUp;\nif (need) {\n  followUp = `Refaire une mesure: OUI (dans ${next})`;\n} else {\n  followUp = `Prochaine mesure conseillée: dans ${next}`;\n}\n\nmsg.payload =\n  `NexPulse — Résultat\\n` +\n  `• État: ${labelToText(label)}\\n` +\n  `• ${adviceToText(adviceCode)}\\n` +\n  `• ${followUp}`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1680,
+        "y": 600,
+        "wires": [
+            [
+                "9a026a3dba407c4d",
+                "09edab64966d1d7a"
+            ]
+        ]
+    },
+    {
+        "id": "9a026a3dba407c4d",
+        "type": "debug",
+        "z": "42660b80a45709c6",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1660,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2e738872fd8bb2e1",
+        "type": "debug",
+        "z": "42660b80a45709c6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "7080161219cbf1c2",
+        "type": "debug",
+        "z": "42660b80a45709c6",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d58c2c16e30da6be",
+        "type": "switch",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "property": "payload.finger",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 920,
+        "wires": [
+            [
+                "ee3aae224eb6541a",
+                "7080161219cbf1c2"
+            ]
+        ]
+    },
+    {
+        "id": "ec916b2fa8a85f7a",
+        "type": "telegram sender",
+        "z": "42660b80a45709c6",
+        "name": "NexPulseBot",
+        "bot": "fe88ac11ca3e65b5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1930,
+        "y": 340,
+        "wires": [
+            [
+                "5c53e2c6f182ca58"
+            ]
+        ]
+    },
+    {
+        "id": "5c53e2c6f182ca58",
+        "type": "debug",
+        "z": "42660b80a45709c6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "996c7fa1f49b4b47",
+        "type": "inject",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Test NexPulse ✅",
+        "payload": "Test NexPulse ✅",
+        "payloadType": "str",
+        "x": 1520,
+        "y": 280,
+        "wires": [
+            [
+                "09edab64966d1d7a"
+            ]
+        ]
+    },
+    {
+        "id": "09edab64966d1d7a",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "to telegram message",
+        "func": "// Transforme un texte (msg.payload string) en message Telegram compatible\nconst chatId = 7990324298; // <-- ton chatId\n\nmsg.payload = {\n  chatId,\n  type: \"message\",\n  content: (msg.payload || \"\").toString()\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1720,
+        "y": 400,
+        "wires": [
+            [
+                "ec916b2fa8a85f7a"
+            ]
+        ]
+    },
+    {
+        "id": "24750a76fa22768e",
+        "type": "function",
+        "z": "42660b80a45709c6",
+        "name": "save last predict (to file)",
+        "func": "// msg.payload = réponse de /predict (objet)\nconst p = msg.payload || {};\nconst out = {\n  ts: new Date().toISOString(),\n  ...p\n};\n\nmsg.payload = JSON.stringify(out, null, 2);\nmsg.filename = \"C:\\\\Users\\\\JBL\\\\Desktop\\\\NexPulse\\\\last_predict.json\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 700,
+        "wires": [
+            [
+                "99dceaf8c0fd4799"
+            ]
+        ]
+    },
+    {
+        "id": "99dceaf8c0fd4799",
+        "type": "file",
+        "z": "42660b80a45709c6",
+        "name": "file in",
+        "filename": "C:\\Users\\JBL\\Desktop\\NexPulse\\last_predict.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 1390,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03d45784912dc895",
+        "type": "switch",
+        "z": "42660b80a45709c6",
+        "name": "only urgent push",
+        "property": "payload.label",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "URGENT",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WARNING",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "NORMAL",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1430,
+        "y": 620,
+        "wires": [
+            [
+                "4ae69e1dc2e94e53"
+            ],
+            [
+                "4ae69e1dc2e94e53"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "42dd66ff73f6cb4d",
+        "type": "link out",
+        "z": "42660b80a45709c6",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "np_notify_link_in",
+            "np_pred_link_in",
+            "5949832be8a7bf92"
+        ],
+        "x": 1155,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "np_btn_emergency_sim",
+        "type": "ui_button",
+        "z": "42660b80a45709c6",
+        "name": "",
+        "group": "dbfa4aa129fe4adb",
+        "order": 30,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "🚨 SIMULER URGENCE",
+        "tooltip": "Envoie des fausses valeurs critiques (bpm=130, spo2=85, temp=39.2)",
+        "color": "#ffffff",
+        "bgcolor": "#dc2626",
+        "className": "",
+        "icon": "warning",
+        "payload": "{\"bpm\":130,\"spo2\":85,\"temp\":39.2,\"finger\":true}",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "a4ecf781ef390cca"
+            ]
+        ]
+    },
+    {
+        "id": "8153a6d2d7759424",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-serialport": "2.0.3",
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-telegrambot": "17.1.3"
+        }
+    }
+]
