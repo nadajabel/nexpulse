@@ -1,0 +1,678 @@
+{
+  "ts": "2026-05-06T20:44:10.876Z",
+  "bpm": 61,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T20:44:14.437Z",
+  "bpm": 61,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T20:45:43.549Z",
+  "bpm": 61,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T20:45:52.342Z",
+  "bpm": 61,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:16:09.829Z",
+  "bpm": 39,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 30,
+  "diagnostic": "Rythme cardiaque hors zone — repose-toi et refais une mesure"
+}
+{
+  "ts": "2026-05-06T21:16:54.133Z",
+  "bpm": 53,
+  "spo2": 99,
+  "overallLevel": "ATTENTION",
+  "overallLabel": "ATTENTION",
+  "score": 80,
+  "diagnostic": "BPM hors zone de repos — respire et refais une mesure"
+}
+{
+  "ts": "2026-05-06T21:32:04.767Z",
+  "bpm": 51,
+  "spo2": 99,
+  "overallLevel": "ATTENTION",
+  "overallLabel": "ATTENTION",
+  "score": 80,
+  "diagnostic": "BPM hors zone de repos — respire et refais une mesure"
+}
+{
+  "ts": "2026-05-06T21:32:06.976Z",
+  "bpm": 51,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:32:23.126Z",
+  "bpm": 62,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:32:43.791Z",
+  "bpm": 63,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:32:48.126Z",
+  "bpm": 63,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:32:51.332Z",
+  "bpm": 63,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 70,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:32:55.631Z",
+  "bpm": 50,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:32:58.887Z",
+  "bpm": 50,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:02.157Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:30.156Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:32.322Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:36.626Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:48.500Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:51.704Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:53.853Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:33:58.189Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:01.431Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:04.667Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:06.819Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:08.980Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:11.163Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:17.607Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:34:25.177Z",
+  "bpm": 55,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 50,
+  "diagnostic": "Température critique — surveille et consulte si nécessaire"
+}
+{
+  "ts": "2026-05-06T21:36:26.096Z",
+  "bpm": 40,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 60,
+  "diagnostic": "Rythme cardiaque hors zone — repose-toi et refais une mesure"
+}
+{
+  "ts": "2026-05-06T22:23:35.575Z",
+  "bpm": 10,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 60,
+  "diagnostic": "Rythme cardiaque hors zone — repose-toi et refais une mesure"
+}
+{
+  "ts": "2026-05-06T22:23:43.116Z",
+  "bpm": 10,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 30,
+  "diagnostic": "Rythme cardiaque hors zone — repose-toi et refais une mesure"
+}
+{
+  "ts": "2026-05-06T22:23:45.266Z",
+  "bpm": 10,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 30,
+  "diagnostic": "Rythme cardiaque hors zone — repose-toi et refais une mesure"
+}
+{
+  "ts": "2026-05-06T22:23:48.520Z",
+  "bpm": 10,
+  "spo2": 99,
+  "overallLevel": "URGENT",
+  "overallLabel": "URGENT",
+  "score": 30,
+  "diagnostic": "Rythme cardiaque hors zone — repose-toi et refais une mesure"
+}
+{
+  "ts": "2026-05-06T22:45:01.497Z",
+  "bpm": 62,
+  "spo2": 100,
+  "temp": 30.04
+}
+{
+  "ts": "2026-05-06T22:45:09.108Z",
+  "bpm": 58,
+  "spo2": 100,
+  "temp": 31.25
+}
+{
+  "ts": "2026-05-06T22:45:14.485Z",
+  "bpm": 96,
+  "spo2": 100,
+  "temp": 28.36
+}
+{
+  "ts": "2026-05-06T22:47:36.137Z",
+  "bpm": 121,
+  "spo2": 100,
+  "temp": 31.22
+}
+{
+  "ts": "2026-05-06T22:47:40.492Z",
+  "bpm": 121,
+  "spo2": 100,
+  "temp": 29.97
+}
+{
+  "ts": "2026-05-06T22:47:46.962Z",
+  "bpm": 121,
+  "spo2": 100,
+  "temp": 30.13
+}
+{
+  "ts": "2026-05-06T22:47:54.534Z",
+  "bpm": 121,
+  "spo2": 100,
+  "temp": 30.07
+}
+{
+  "ts": "2026-05-06T22:49:52.591Z",
+  "bpm": 46,
+  "spo2": 100,
+  "temp": 36.61
+}
+{
+  "ts": "2026-05-06T23:40:44.686Z",
+  "bpm": 0,
+  "spo2": 98,
+  "temp": 26.02
+}
+{
+  "ts": "2026-05-11T19:27:13.740Z",
+  "bpm": 0,
+  "spo2": 99,
+  "temp": 31.21
+}
+{
+  "ts": "2026-05-11T19:33:27.310Z",
+  "bpm": 13,
+  "spo2": 99,
+  "temp": 29.69
+}
+{
+  "ts": "2026-05-11T19:41:56.985Z",
+  "bpm": 13,
+  "spo2": 99,
+  "temp": 34.33
+}
+{
+  "ts": "2026-05-11T19:46:16.110Z",
+  "bpm": 34,
+  "spo2": 99,
+  "temp": 29.36
+}
+{
+  "ts": "2026-05-11T19:54:37.294Z",
+  "bpm": 43,
+  "spo2": 99,
+  "temp": 27.46
+}
+{
+  "ts": "2026-05-11T20:13:15.927Z",
+  "bpm": 43,
+  "spo2": 99,
+  "temp": 32.01
+}
+{
+  "ts": "2026-05-11T20:13:24.219Z",
+  "bpm": 43,
+  "spo2": 99,
+  "temp": 27.82
+}
+{
+  "ts": "2026-05-11T20:13:38.051Z",
+  "bpm": 43,
+  "spo2": 99,
+  "temp": 33.59
+}
+{
+  "ts": "2026-05-11T20:13:41.336Z",
+  "bpm": 43,
+  "spo2": 99,
+  "temp": 25.62
+}
+{
+  "ts": "2026-05-11T20:16:57.038Z",
+  "bpm": 43,
+  "spo2": 99,
+  "temp": 32.95
+}
+{
+  "ts": "2026-05-11T20:20:38.237Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 27.88
+}
+{
+  "ts": "2026-05-11T20:20:51.240Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 27.94
+}
+{
+  "ts": "2026-05-11T20:22:36.275Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 32.25
+}
+{
+  "ts": "2026-05-11T20:22:55.721Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 27.88
+}
+{
+  "ts": "2026-05-11T20:23:03.633Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 25.76
+}
+{
+  "ts": "2026-05-11T20:29:06.634Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 29.71
+}
+{
+  "ts": "2026-05-11T20:47:42.810Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 25.96
+}
+{
+  "ts": "2026-05-11T20:48:36.224Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.07
+}
+{
+  "ts": "2026-05-11T20:48:46.795Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 26.1
+}
+{
+  "ts": "2026-05-11T20:52:01.343Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.15
+}
+{
+  "ts": "2026-05-11T20:53:59.653Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.12
+}
+{
+  "ts": "2026-05-11T20:54:01.889Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 26.1
+}
+{
+  "ts": "2026-05-11T20:56:24.337Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 32.21
+}
+{
+  "ts": "2026-05-11T20:56:41.438Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 34.51
+}
+{
+  "ts": "2026-05-11T21:08:43.302Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.12
+}
+{
+  "ts": "2026-05-11T21:08:55.230Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.15
+}
+{
+  "ts": "2026-05-11T21:09:01.711Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.02
+}
+{
+  "ts": "2026-05-11T21:09:18.929Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 25.96
+}
+{
+  "ts": "2026-05-11T21:09:23.244Z",
+  "bpm": 71,
+  "spo2": 99,
+  "temp": 28.18
+}
+{
+  "ts": "2026-05-11T21:13:12.340Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28.13
+}
+{
+  "ts": "2026-05-11T21:13:45.820Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 29.81
+}
+{
+  "ts": "2026-05-11T21:14:04.198Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 29.82
+}
+{
+  "ts": "2026-05-11T21:14:10.722Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 29.75
+}
+{
+  "ts": "2026-05-11T21:15:41.085Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28.12
+}
+{
+  "ts": "2026-05-11T21:18:17.778Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28.06
+}
+{
+  "ts": "2026-05-11T21:24:19.266Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28.07
+}
+{
+  "ts": "2026-05-11T21:24:47.646Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28.22
+}
+{
+  "ts": "2026-05-11T21:28:19.745Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28.04
+}
+{
+  "ts": "2026-05-11T21:32:32.602Z",
+  "bpm": 0,
+  "spo2": 99,
+  "temp": 29.78
+}
+{
+  "ts": "2026-05-11T21:52:25.831Z",
+  "bpm": 63,
+  "spo2": 99,
+  "temp": 36.1
+}
+{
+  "ts": "2026-05-11T22:04:57.896Z",
+  "bpm": 44,
+  "spo2": 99,
+  "temp": 29.69
+}
+{
+  "ts": "2026-05-12T20:51:53.443Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 36.06
+}
+{
+  "ts": "2026-05-12T20:53:43.411Z",
+  "bpm": 77,
+  "spo2": 99,
+  "temp": 28
+}
+{
+  "ts": "2026-05-12T20:54:14.814Z",
+  "bpm": 72,
+  "spo2": 99,
+  "temp": 35.48
+}
+{
+  "ts": "2026-05-12T20:54:32.103Z",
+  "bpm": 104,
+  "spo2": 99,
+  "temp": 33.54
+}
+{
+  "ts": "2026-05-12T21:12:16.229Z",
+  "bpm": 104,
+  "spo2": 99,
+  "temp": 35.73
+}
+{
+  "ts": "2026-05-12T21:21:07.514Z",
+  "bpm": 104,
+  "spo2": 99,
+  "temp": 29.96
+}
+{
+  "ts": "2026-05-12T21:25:58.994Z",
+  "bpm": 104,
+  "spo2": 99,
+  "temp": 33.74
+}
+{
+  "ts": "2026-05-12T21:28:45.888Z",
+  "bpm": 104,
+  "spo2": 99,
+  "temp": 28.23
+}
+{
+  "ts": "2026-05-12T21:31:49.569Z",
+  "bpm": 104,
+  "spo2": 99,
+  "temp": 26.3
+}
+{
+  "ts": "2026-05-12T21:35:19.948Z",
+  "bpm": 106,
+  "spo2": 99,
+  "temp": 35.23
+}
+{
+  "ts": "2026-05-12T21:37:26.083Z",
+  "bpm": 99,
+  "spo2": 99,
+  "temp": 28.42
+}
+{
+  "ts": "2026-05-12T21:38:04.020Z",
+  "bpm": 87,
+  "spo2": 99,
+  "temp": 36.17
+}

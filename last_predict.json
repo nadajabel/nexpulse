@@ -1,0 +1,31 @@
+{
+  "ts": "2026-05-16T10:10:28.864848+00:00",
+  "patient_id": "P001",
+  "label": "NORMAL",
+  "label_proba": {
+    "NORMAL": 0.9966666666666667,
+    "URGENT": 0,
+    "WARNING": 0.0033333333333333335
+  },
+  "need_remeasure": 0,
+  "remeasure_in_min": 480,
+  "advice_code": "ADVICE_MONITOR",
+  "features_used": {
+    "risk_profile": "low",
+    "bpm": 63,
+    "spo2": 99,
+    "temp": 32.06,
+    "bpm_prev": 63,
+    "spo2_prev": 99,
+    "temp_prev": 35.91,
+    "delta_bpm": 0,
+    "delta_spo2": 0,
+    "delta_temp": -3.8499999999999943,
+    "trend_bpm": "stable",
+    "trend_spo2": "stable",
+    "trend_temp": "down",
+    "time_gap_min": 1,
+    "recent_abnormal_count_10": 0,
+    "symptom": "none"
+  }
+}

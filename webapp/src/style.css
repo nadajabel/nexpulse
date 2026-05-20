@@ -1,0 +1,213 @@
+:root {
+  /* Colors */
+  --bg-color: #1e293b;
+  --surface-color: rgba(30, 41, 59, 0.7);
+  --surface-border: rgba(255, 255, 255, 0.08);
+  
+  --primary: #60a5fa;
+  --primary-glow: rgba(96, 165, 250, 0.2);
+  
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  
+  --vital-hr: #fb7185;
+  --vital-hr-glow: rgba(251, 113, 133, 0.2);
+  
+  --vital-spo2: #38bdf8;
+  --vital-spo2-glow: rgba(56, 189, 248, 0.2);
+  
+  --vital-temp: #fbbf24;
+  --vital-temp-glow: rgba(251, 191, 36, 0.2);
+  
+  /* Typography */
+  --font-family: 'Outfit', sans-serif;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(96, 165, 250, 0.03), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(251, 113, 133, 0.03), transparent 25%);
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Glassmorphism Components */
+.glass-panel {
+  background: var(--surface-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 4px 14px 0 var(--primary-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 var(--primary-glow);
+}
+
+/* Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(15, 17, 26, 0.8);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--surface-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.navbar-brand i {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  flex: 1;
+}
+
+/* Auth Forms */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 32px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px var(--primary-glow);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page {
+  animation: fadeIn 0.4s ease-out;
+}
